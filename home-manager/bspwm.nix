@@ -1,6 +1,8 @@
 { ... }:
 
 {
+  imports = [ ./polybar.nix ];
+
   config.xsession.windowManager.bspwm = {
     enable = true;
     settings = {
@@ -19,7 +21,7 @@
       "super + q" = "alacritty";
       "super + w" = "firefox";
       "super + s" = "rofi -show drun -show-icons";
-      "super + Escape" = "pkill -USR1 -x sxhkd & bspc wm -r";
+      "super + Escape" = "pkill -USR1 -x sxhkd & bspc wm -r & killall polybar; polybar bar &";
       "super + c" = "bspc node -c";
       "super + m" = "bspc quit";
       "super + g" = "bspc -s biggest.window";
@@ -30,9 +32,4 @@
       "XF86Audio{Play,Next,Prev}" = "playerctl {play-pause,next,previous}";
     };
   };
-
-  # config.services.polybar = {
-  #   enable = true;
-  #   script = "polybar bar &";
-  # };
 }
