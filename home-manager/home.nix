@@ -5,7 +5,7 @@
     ./programs.nix
     ./ime.nix
     ./bspwm.nix
-    ./hyprland.nix
+    # ./hyprland.nix
     ./gtk.nix
     ./helix.nix
     ./zsh.nix
