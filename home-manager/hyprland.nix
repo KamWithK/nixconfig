@@ -18,7 +18,6 @@
     wl-clipboard
     grim
     slurp
-    avizo
     unstable.xwaylandvideobridge
   ];
 }

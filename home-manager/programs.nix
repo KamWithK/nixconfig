@@ -14,6 +14,7 @@
     rofi-wayland
     networkmanagerapplet
     playerctl
+    avizo
     feh
     flameshot
 
