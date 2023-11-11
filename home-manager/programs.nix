@@ -5,7 +5,7 @@
   home.packages = with pkgs; [
     firefox
     chromium
-    discord
+    unstable.discord
     slack
     spotify
     calibre
