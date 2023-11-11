@@ -76,7 +76,10 @@
 
     # libinput.enable = true; # touchpad support
 
-    displayManager.sddm.enable = true;
+    displayManager.sddm = {
+      enable = true;
+      theme = "chili";
+    };
     windowManager.bspwm.enable = true;
     # windowManager.hypr.enable = true;
   };
@@ -166,6 +169,8 @@
 
       alacritty
       helix
+
+      pkgs.unstable.sddm-chili-theme
   ];
 
   # Custom fonts
