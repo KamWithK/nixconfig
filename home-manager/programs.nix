@@ -26,6 +26,10 @@
     anki-bin
   ];
 
+  nixpkgs.config.environment.variables = {
+    TERMINAL = "alacritty";
+  };
+
   # Enable git
   programs.git.enable = true;
 }
