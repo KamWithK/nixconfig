@@ -7,6 +7,7 @@
     ./bspwm.nix
     # ./hyprland.nix
     ./gtk.nix
+    ./lf.nix
     ./helix.nix
     ./zsh.nix
     ./mpv.nix
