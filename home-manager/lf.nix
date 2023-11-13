@@ -31,6 +31,7 @@
       "<enter>" = "open";
       ee = "editor-open";
       go = "dragon-out";
+      gd = "cd /mnt";
       c = "mkdir";
     };
   };
