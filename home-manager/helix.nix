@@ -16,7 +16,7 @@
     };
   };
 
-  nixpkgs.config.environment.variables = {
+  home.sessionVariables = {
     EDITOR = "hx";
     SUDO_EDITOR = "hx";
     SYSTEMD_EDITOR = "hx";
