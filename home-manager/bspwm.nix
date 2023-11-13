@@ -13,7 +13,7 @@
       focus_follows_pointer = true;
     };
     monitors."any" = ["1" "2" "3" "4" "5" "6" "7" "8" "9"];
-    startupPrograms = [ "polybar bar" "solaar -w hide" ];
+    startupPrograms = [ "killall polybar; polybar bar" "solaar -w hide" ];
   };
 
   config.services.sxhkd = {
