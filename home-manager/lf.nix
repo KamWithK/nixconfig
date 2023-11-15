@@ -17,6 +17,7 @@
       q = "quit";
       dragon-out = ''%${pkgs.xdragon}/bin/xdragon -ax "$fx"'';
       editor-open = "$$EDITOR $f";
+      mpv-open = ''%${pkgs.mpv}/bin/mpv "$f"'';
       mkdir = ''
       ''${{
         printf "Directory Name: "
@@ -29,7 +30,8 @@
     keybindings = {
       "." = "set hidden!";
       "<enter>" = "open";
-      ee = "editor-open";
+      oe = "editor-open";
+      om = "mpv-open";
       go = "dragon-out";
       gd = "cd /mnt";
       c = "mkdir";
