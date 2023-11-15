@@ -33,7 +33,10 @@
       oe = "editor-open";
       om = "mpv-open";
       go = "dragon-out";
+      gu = "cd ~/";
       gd = "cd /mnt";
+      gm = "cd /mnt/Media";
+      gb = "cd /mnt/Backup";
       c = "mkdir";
     };
   };
