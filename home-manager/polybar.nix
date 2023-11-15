@@ -10,6 +10,7 @@
         bottom = false;
         fixed-center = true;
         font-0 = "FontAwesome:size=10";
+        font-1 = "Noto Sans JP:size=10";
 
         modules-left = "date";
         modules-center = "title";
