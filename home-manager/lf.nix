@@ -17,7 +17,7 @@
       q = "quit";
       dragon-out = ''%${pkgs.xdragon}/bin/xdragon -ax "$fx"'';
       editor-open = "$$EDITOR $f";
-      mpv-open = ''%${pkgs.mpv}/bin/mpv --no-terminal "$f" &'';
+      mpv-open = ''%${pkgs.mpv}/bin/mpv "$f" &>/dev/null &'';
       mkdir = ''
       ''${{
         printf "Directory Name: "
