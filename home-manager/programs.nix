@@ -16,6 +16,7 @@
     playerctl
     avizo
     feh
+    wget
     flameshot
 
     nodejs
