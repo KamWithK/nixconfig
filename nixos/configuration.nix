@@ -167,6 +167,11 @@
   virtualisation.docker.enable = true;
   users.extraGroups.docker.members = [ "kamwithk" ];
 
+  # Enable mullvad
+  services.mullvad-vpn.enable = true;
+  services.mullvad-vpn.enableExcludeWrapper = false;
+  services.mullvad-vpn.package = pkgs.unstable.mullvad-vpn;
+
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
       home-manager

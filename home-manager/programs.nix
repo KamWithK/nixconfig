@@ -11,6 +11,10 @@
     spotify
     calibre
 
+    unstable.mullvad-browser
+    unstable.mullvad-closest
+    unstable.qbittorrent
+
     xclip
     rofi-wayland
     networkmanagerapplet
