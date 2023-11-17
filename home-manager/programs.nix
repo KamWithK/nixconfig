@@ -6,6 +6,7 @@
     firefox
     unstable.chromium
     unstable.discord
+    unstable.vesktop
     slack
     spotify
     calibre
