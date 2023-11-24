@@ -12,7 +12,7 @@
 
     unstable.mullvad-browser
     unstable.mullvad-closest
-    unstable.qbittorrent
+    # unstable.qbittorrent
 
     xclip
     rofi-wayland

@@ -12,7 +12,7 @@
     ./zsh.nix
     ./mpv.nix
     ./obs.nix
-    ./firefox.nix
+    ./librewolf.nix
     ./brave.nix
   ];
 
