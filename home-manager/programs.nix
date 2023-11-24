@@ -3,7 +3,6 @@
 {
 
   home.packages = with pkgs; [
-    firefox
     unstable.chromium
     unstable.discord
     unstable.vesktop

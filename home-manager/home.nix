@@ -12,6 +12,8 @@
     ./zsh.nix
     ./mpv.nix
     ./obs.nix
+    ./firefox.nix
+    ./brave.nix
   ];
 
   nixpkgs = {
@@ -19,7 +21,7 @@
       allowUnfree = true;
       allowUnfreePredicate = _: true;
     };
-    overlays = [ outputs.overlays.additions outputs.overlays.unstable-packages ];
+    overlays = [ outputs.overlays.additions outputs.overlays.unstable-packages outputs.overlays.flake-inputs ];
   };
   # home-manager.useGlobalPkgs = true;
   # home-manager.useUserPackages = true;

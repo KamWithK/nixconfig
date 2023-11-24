@@ -20,7 +20,7 @@
     enable = true;
     keybindings = {
       "super + q" = "alacritty";
-      "super + w" = "firefox";
+      "super + w" = "librewolf";
       "super + s" = "rofi -show drun -show-icons";
       "super + shift + s" = "flameshot gui --clipboard --accept-on-select";
       "super + Escape" = "pkill -USR1 -x sxhkd & bspc wm -r & killall polybar; polybar bar &";
