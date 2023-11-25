@@ -19,6 +19,9 @@
     networkmanagerapplet
     playerctl
     avizo
+    xfce.thunar
+    tree
+    unzip
     feh
     wget
     flameshot
