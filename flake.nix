@@ -18,13 +18,13 @@
     overlays = import ./overlays { inherit inputs; };
 
     nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
+      gigatop = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs; };
-        modules = [ ./hosts/nixos/configuration.nix ];
+        modules = [ ./hosts/gigatop/configuration.nix ];
       };
     };
     homeConfigurations = {
-      "kamwithk@nixos" = home-manager.lib.homeManagerConfiguration {
+      "kamwithk@gigatop" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = { inherit inputs outputs; };
         modules = [ ./home-manager/users/kamwithk.nix ];

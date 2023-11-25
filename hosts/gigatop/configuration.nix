@@ -42,7 +42,7 @@
   boot.supportedFilesystems = [ "ntfs" ];
 
   # Networking
-  networking.hostName = "nixos";
+  networking.hostName = "gigatop";
   networking.networkmanager.enable = true;
   # networking.wireless.enable = true;
 
