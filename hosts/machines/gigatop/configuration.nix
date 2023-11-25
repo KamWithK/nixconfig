@@ -2,16 +2,16 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./pipewire.nix
-    ./x11.nix
-    # ./wayland.nix
-    ./locale.nix
-    ./fonts.nix
-    ./bluetooth.nix
-    ./virtual_devices.nix
-    ./vpn.nix
-    ./shell.nix
-    ./mounts.nix
+    ../../common/pipewire.nix
+    ../../common/x11.nix
+    # ../../common/wayland.nix
+    ../../common/locale.nix
+    ../../common/fonts.nix
+    ../../common/bluetooth.nix
+    ../../common/virtual_devices.nix
+    ../../common/vpn.nix
+    ../../common/shell.nix
+    ../../common/mounts.nix
   ];
 
   # Source - https://github.com/Misterio77/nix-starter-configs/blob/main/standard/overlays/default.nix

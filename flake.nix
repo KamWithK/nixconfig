@@ -20,7 +20,7 @@
     nixosConfigurations = {
       gigatop = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs; };
-        modules = [ ./hosts/gigatop/configuration.nix ];
+        modules = [ ./hosts/machines/gigatop/configuration.nix ];
       };
     };
     homeConfigurations = {
