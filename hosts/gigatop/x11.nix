@@ -18,8 +18,9 @@
   };
 
   # Theme for sddm
-  environment.systemPackages = with pkgs.unstable; [
-      sddm-chili-theme
+  environment.systemPackages = with pkgs; [
+    libsForQt5.qt5.qtgraphicaleffects
+    unstable.sddm-chili-theme
   ];
 
   # ~/.background-image loaded by default on x11
