@@ -2,7 +2,7 @@
 
 {
   config.home.file = {
-    ".config/hypr/hyprland.conf".source = ../dotfiles/hyprland.conf;
+    ".config/hypr/hyprland.conf".source = ../../dotfiles/hyprland.conf;
   };
 
   config.home.sessionVariables = {

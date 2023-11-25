@@ -20,14 +20,14 @@
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs; };
-        modules = [ ./nixos/configuration.nix ];
+        modules = [ ./hosts/nixos/configuration.nix ];
       };
     };
     homeConfigurations = {
       "kamwithk@nixos" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = { inherit inputs outputs; };
-        modules = [ ./home-manager/home.nix ];
+        modules = [ ./home-manager/users/kamwithk.nix ];
       };
     };
   };

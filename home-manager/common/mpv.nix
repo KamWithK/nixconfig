@@ -7,7 +7,7 @@
   };
 
   config.home.file = {
-    ".config/mpv/input.conf".source = ../dotfiles/mpv/input.conf;
-    ".config/mpv/mpv.conf".source = ../dotfiles/mpv/mpv.conf;
+    ".config/mpv/input.conf".source = ../../dotfiles/mpv/input.conf;
+    ".config/mpv/mpv.conf".source = ../../dotfiles/mpv/mpv.conf;
   };
 }

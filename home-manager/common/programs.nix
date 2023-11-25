@@ -3,17 +3,6 @@
 {
 
   home.packages = with pkgs; [
-    unstable.chromium
-    unstable.discord
-    unstable.vesktop
-    slack
-    spotify
-    calibre
-
-    unstable.mullvad-browser
-    unstable.mullvad-closest
-    # unstable.qbittorrent
-
     xclip
     rofi-wayland
     networkmanagerapplet
@@ -26,12 +15,8 @@
     wget
     flameshot
 
-    nodejs
-    unstable.go
-    unstable.gopls
-    unstable.atlas
-
-    anki-bin
+    unstable.mullvad-browser
+    unstable.mullvad-closest
   ];
 
   nixpkgs.config.environment.variables = {

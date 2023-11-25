@@ -46,7 +46,7 @@
   };
 
   # Sourc - https://raw.githubusercontent.com/gokcehan/lf/master/etc/icons.example
-  xdg.configFile."lf/icons".source = ../dotfiles/.icons;
+  xdg.configFile."lf/icons".source = ../../dotfiles/.icons;
 
   home.packages = with pkgs; [
     xdragon

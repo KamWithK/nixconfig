@@ -1,19 +1,19 @@
-{ outputs, ... }:
+{ outputs, pkgs, ... }:
 
 {
   imports = [
-    ./programs.nix
-    ./ime.nix
-    ./bspwm.nix
-    # ./hyprland.nix
-    ./gtk.nix
-    ./lf.nix
-    ./helix.nix
-    ./zsh.nix
-    ./mpv.nix
-    ./obs.nix
-    ./librewolf.nix
-    ./brave.nix
+    ../common/programs.nix
+    ../common/ime.nix
+    ../common/bspwm.nix
+    # ../common/hyprland.nix
+    ../common/gtk.nix
+    ../common/lf.nix
+    ../common/helix.nix
+    ../common/zsh.nix
+    ../common/mpv.nix
+    ../common/obs.nix
+    ../common/librewolf.nix
+    ../common/brave.nix
   ];
 
   nixpkgs = {
@@ -31,6 +31,20 @@
   home.username = "kamwithk";
   home.homeDirectory = "/home/kamwithk";
 
+  home.packages = with pkgs; [
+      unstable.chromium
+      unstable.discord
+      unstable.vesktop
+      slack
+      spotify
+      calibre
+      anki-bin
+
+      nodejs
+      unstable.go
+      unstable.gopls
+      unstable.atlas
+    ];
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
