@@ -9,6 +9,7 @@
     ../../common/fonts.nix
     ../../common/bluetooth.nix
     ../../common/virtual_devices.nix
+    ../../common/hotspot.nix
     ../../common/vpn.nix
     ../../common/zerotier.nix
     ../../common/shell.nix
