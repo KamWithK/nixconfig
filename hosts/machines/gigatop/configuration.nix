@@ -12,6 +12,7 @@
     ../../common/vpn.nix
     ../../common/shell.nix
     ../../common/mounts.nix
+    ../../common/hp_printer.nix
   ];
 
   # Source - https://github.com/Misterio77/nix-starter-configs/blob/main/standard/overlays/default.nix
@@ -46,9 +47,6 @@
   networking.networkmanager.enable = true;
   # networking.wireless.enable = true;
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
   # Logitech Unifying Bolt
   hardware.logitech.wireless.enable = true;
   hardware.logitech.wireless.enableGraphical = true;
@@ -57,7 +55,7 @@
   users.users.kamwithk = {
     isNormalUser = true;
     description = "Kamron Bhavnagri";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "scanner" "lp" ];
   };
 
   # Docker virtualisation
