@@ -32,19 +32,22 @@
   home.homeDirectory = "/home/kamwithk";
 
   home.packages = with pkgs; [
-      unstable.chromium
-      unstable.discord
-      unstable.vesktop
-      slack
-      spotify
-      calibre
-      anki-bin
+    unstable.chromium
+    unstable.discord
+    unstable.vesktop
+    slack
+    spotify
+    calibre
+    jellyfin-media-player
+    jellyfin-mpv-shim
+    anki-bin
 
-      nodejs
-      unstable.go
-      unstable.gopls
-      unstable.atlas
-    ];
+    nodejs
+    unstable.go
+    unstable.gopls
+    unstable.atlas
+  ];
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
