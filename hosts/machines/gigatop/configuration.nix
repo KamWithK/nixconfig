@@ -10,6 +10,7 @@
     ../../common/bluetooth.nix
     ../../common/virtual_devices.nix
     ../../common/vpn.nix
+    ../../common/zerotier.nix
     ../../common/shell.nix
     ../../common/mounts.nix
     ../../common/hp_printer.nix
