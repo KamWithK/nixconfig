@@ -43,6 +43,11 @@
     jellyfin-mpv-shim
     anki-bin
     unstable.onlyoffice-bin_7_5
+    # unstable.feishin
+    sonixd
+
+    nicotine-plus
+    unstable.picard
 
     unstable.baobab
 
