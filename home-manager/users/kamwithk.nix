@@ -43,6 +43,8 @@
     jellyfin-mpv-shim
     anki-bin
 
+    unstable.baobab
+
     nodejs
     unstable.go
     unstable.gopls
