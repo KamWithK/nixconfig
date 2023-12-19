@@ -3,6 +3,7 @@
 {
   imports = [
     ../common/programs.nix
+    ../common/redshift.nix
     ../common/ime.nix
     ../common/bspwm.nix
     # ../common/hyprland.nix
