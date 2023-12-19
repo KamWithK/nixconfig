@@ -42,6 +42,7 @@
     jellyfin-media-player
     jellyfin-mpv-shim
     anki-bin
+    unstable.onlyoffice-bin_7_5
 
     unstable.baobab
 
