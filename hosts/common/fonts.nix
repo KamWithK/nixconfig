@@ -2,7 +2,7 @@
 {
   # Custom fonts
   fonts.fontDir.enable = true;
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     nerdfonts
     font-awesome
     google-fonts
