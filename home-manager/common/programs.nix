@@ -10,7 +10,8 @@
     avizo
     xfce.thunar
     tree
-    unzip
+    unp
+    peazip
     feh
     wget
     flameshot
