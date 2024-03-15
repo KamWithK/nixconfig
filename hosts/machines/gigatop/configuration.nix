@@ -16,6 +16,7 @@
     ../../common/mounts.nix
     ../../common/hp_printer.nix
     ../../common/rgb.nix
+    ../../common/steam.nix
   ];
 
   # Source - https://github.com/Misterio77/nix-starter-configs/blob/main/standard/overlays/default.nix
