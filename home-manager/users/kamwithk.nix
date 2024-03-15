@@ -43,9 +43,12 @@
     jellyfin-mpv-shim
     anki-bin
     unstable.onlyoffice-bin_7_5
+    pavucontrol
     # unstable.feishin
     sonixd
+    signal-desktop
 
+    qbittorrent
     nicotine-plus
     unstable.picard
 
