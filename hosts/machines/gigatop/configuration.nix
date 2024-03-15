@@ -72,11 +72,13 @@
   hardware.logitech.wireless.enable = true;
   hardware.logitech.wireless.enableGraphical = true;
 
+  programs.adb.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.kamwithk = {
     isNormalUser = true;
     description = "Kamron Bhavnagri";
-    extraGroups = [ "networkmanager" "wheel" "scanner" "lp" ];
+    extraGroups = [ "networkmanager" "wheel" "scanner" "lp" "adbuser" ];
   };
 
   # Docker virtualisation
