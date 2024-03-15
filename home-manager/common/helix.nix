@@ -33,5 +33,6 @@
     pkgs.unstable.nodePackages.yaml-language-server
     svelte-language-server
     pkgs.nil
+    web-ext
   ];
 }
