@@ -5,8 +5,8 @@
     ../common/programs.nix
     ../common/redshift.nix
     ../common/ime.nix
-    ../common/bspwm.nix
-    # ../common/hyprland.nix
+    # ../common/bspwm.nix
+    ../common/hyprland.nix
     ../common/gtk.nix
     ../common/lf.nix
     ../common/helix.nix
@@ -33,31 +33,22 @@
   home.homeDirectory = "/home/kamwithk";
 
   home.packages = with pkgs; [
-    unstable.chromium
     unstable.discord
     unstable.vesktop
+    signal-desktop
     slack
     spotify
-    calibre
-    jellyfin-media-player
-    jellyfin-mpv-shim
-    anki-bin
-    unstable.onlyoffice-bin_7_5
+    # calibre
+    # jellyfin-media-player
+    # jellyfin-mpv-shim
+    # onlyoffice-bin
     pavucontrol
     # unstable.feishin
-    sonixd
-    signal-desktop
+    # sonixd
 
     qbittorrent
     nicotine-plus
     unstable.picard
-
-    unstable.baobab
-
-    nodejs
-    unstable.go
-    unstable.gopls
-    unstable.atlas
   ];
 
   # This value determines the Home Manager release that your configuration is
@@ -67,7 +58,7 @@
   # You should not change this value, even if you update Home Manager. If you do
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
-  home.stateVersion = "23.05"; # Please read the comment before changing.
+  home.stateVersion = "24.05"; # Please read the comment before changing.
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

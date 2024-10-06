@@ -12,17 +12,11 @@
     tree
     unp
     unrar
-    peazip
     feh
     wget
     flameshot
-    gparted
 
-    unstable.mullvad-browser
-    unstable.mullvad-closest
-
-    android-studio
-    flutter
+    # android-studio
   ];
 
   nixpkgs.config.environment.variables = {

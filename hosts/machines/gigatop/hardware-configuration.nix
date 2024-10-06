@@ -14,16 +14,19 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/e28c08ce-b562-46ff-9805-3a3a6208d2ca";
+    { device = "/dev/disk/by-uuid/40bdba5b-9c1a-4df6-a9ee-b42cf31e2781";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/0151-BDD8";
+    { device = "/dev/disk/by-uuid/51AB-6797";
       fsType = "vfat";
+      options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  swapDevices = [ ];
+  swapDevices =
+    [ { device = "/dev/disk/by-uuid/86f13538-2fa2-403a-9aaf-e9972765fe04"; }
+    ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's

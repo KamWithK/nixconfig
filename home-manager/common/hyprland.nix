@@ -9,7 +9,7 @@
     NIXOS_OZONE_WL = "1";
     MOZ_ENABLE_WAYLAND = "1";
   };
-  config.programs.chromium.commandLineArgs = "--enable-wayland-ime";
+  config.programs.chromium.commandLineArgs = ["--enable-wayland-ime"];
 
   config.home.packages = with pkgs; [
     waybar
