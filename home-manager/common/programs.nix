@@ -16,6 +16,7 @@
     wget
     flameshot
 
+    gh
     # android-studio
   ];
 
