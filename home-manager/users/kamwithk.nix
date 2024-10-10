@@ -10,7 +10,8 @@
     ../common/gtk.nix
     ../common/lf.nix
     ../common/helix.nix
-    ../common/emacs.nix
+    # ../common/emacs.nix
+    ../common/doom_emacs.nix
     ../common/zsh.nix
     ../common/mpv.nix
     ../common/obs.nix
