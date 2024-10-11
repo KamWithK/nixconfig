@@ -93,7 +93,6 @@
 
       killall
       polkit_gnome
-      parted
 
       helix
   ];
