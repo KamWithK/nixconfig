@@ -14,6 +14,9 @@
 
     # windowManager.bspwm.enable = true;
     windowManager.hypr.enable = true;
+
+    # ~/.background-image loaded by default on x11
+    desktopManager.wallpaper.mode = "fill";
   };
 
   services.displayManager.sddm = {
@@ -27,7 +30,4 @@
     libsForQt5.qt5.qtgraphicaleffects
     unstable.sddm-chili-theme
   ];
-
-  # ~/.background-image loaded by default on x11
-  services.xserver.desktopManager.wallpaper.mode = "fill";
 }
