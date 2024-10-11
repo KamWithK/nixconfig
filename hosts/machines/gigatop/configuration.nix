@@ -5,6 +5,7 @@
     ../../common/pipewire.nix
     ../../common/x11.nix
     ../../common/wayland.nix
+    ../../common/stylix.nix
     ../../common/locale.nix
     ../../common/fonts.nix
     ../../common/bluetooth.nix

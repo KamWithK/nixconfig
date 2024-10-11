@@ -5,6 +5,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    stylix.url = "github:danth/stylix/release-24.05";
+
     nix-doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
     # Optional, to download less. Neither the module nor the overlay uses this input.
     nix-doom-emacs-unstraightened.inputs.nixpkgs.follows = "";
@@ -24,7 +26,10 @@
     nixosConfigurations = {
       gigatop = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs outputs; };
-        modules = [ ./hosts/machines/gigatop/configuration.nix ];
+        modules = [
+          inputs.stylix.nixosModules.stylix
+          ./hosts/machines/gigatop/configuration.nix
+        ];
       };
     };
     homeConfigurations = {
@@ -32,6 +37,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = { inherit inputs outputs; };
         modules = [
+          inputs.stylix.homeManagerModules.stylix
           inputs.nix-doom-emacs-unstraightened.hmModule
           ./home-manager/users/kamwithk.nix
         ];

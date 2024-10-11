@@ -4,7 +4,6 @@
   programs.helix = {
     enable = true;
     settings = {
-      theme = "nord";
       editor = {
         true-color = true;
         line-number = "relative";

@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ../../hosts/common/stylix.nix
     ../common/programs.nix
     ../common/redshift.nix
     ../common/ime.nix
