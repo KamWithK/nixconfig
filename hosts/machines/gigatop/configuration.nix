@@ -95,7 +95,6 @@
       polkit_gnome
       parted
 
-      alacritty
       helix
   ];
 

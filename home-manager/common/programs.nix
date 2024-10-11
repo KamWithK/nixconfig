@@ -20,6 +20,8 @@
     # android-studio
   ];
 
+  programs.alacritty.enable = true;
+
   nixpkgs.config.environment.variables = {
     TERMINAL = "alacritty";
   };
