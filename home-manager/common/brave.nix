@@ -3,7 +3,7 @@
 {
   programs.chromium = {
     enable = true;
-    package = pkgs.unstable.brave;
+    package = pkgs.brave;
 
     extensions = [
       "cjpalhdlnbpafiamejdnhcphjbkeiagm" # ublock-origin
