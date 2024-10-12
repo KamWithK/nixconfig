@@ -13,6 +13,7 @@
     ../../common/hotspot.nix
     ../../common/vpn.nix
     ../../common/zerotier.nix
+    ../../common/syncthing.nix
     ../../common/shell.nix
     ../../common/mounts.nix
     ../../common/hp_printer.nix
