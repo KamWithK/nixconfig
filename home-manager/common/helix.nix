@@ -26,7 +26,7 @@
     pnpm
     typescript
     typescript-language-server
-    vscode-langservers-extracted
+    pkgs.unstable.vscode-langservers-extracted
     dockerfile-language-server-nodejs
     bash-language-server
     pkgs.unstable.nodePackages.yaml-language-server
