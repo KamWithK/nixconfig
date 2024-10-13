@@ -3,7 +3,7 @@
 {
   programs.librewolf = {
     enable = true;
-    package = pkgs.unstable.librewolf;
+    package = pkgs.librewolf;
     settings = {
       "identity.fxaccounts.enabled" = true;
       "privacy.clearOnShutdown.history" = false;
