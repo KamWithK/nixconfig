@@ -1,8 +1,8 @@
-{ pkgs, config, ... }:
-{
+{ pkgs, config, ... }: {
   stylix = {
     enable = true;
     polarity = "dark";
+    fonts.sizes.popups = 15;
 
     # Themes from:
     # https://tinted-theming.github.io/base16-gallery/
