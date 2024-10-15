@@ -20,7 +20,7 @@
       };
       folders = {
         "Org" = {
-          path = "~/org";
+          path = "/home/kamwithk/org";
           devices = [ "Phone" ];
         };
       };
