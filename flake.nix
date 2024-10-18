@@ -15,33 +15,44 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... } @ inputs:
-  let
-    inherit (self) outputs;
-    system = "x86_64-linux";
-  in {
-    packages = import ./pkgs nixpkgs.legacyPackages.${system};
-    overlays = import ./overlays { inherit inputs; };
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      ...
+    }@inputs:
+    let
+      inherit (self) outputs;
+      system = "x86_64-linux";
+    in
+    {
+      packages = import ./pkgs nixpkgs.legacyPackages.${system};
+      overlays = import ./overlays { inherit inputs; };
 
-    nixosConfigurations = {
-      gigatop = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs outputs; };
-        modules = [
-          inputs.stylix.nixosModules.stylix
-          ./hosts/machines/gigatop/configuration.nix
-        ];
+      nixosConfigurations = {
+        gigatop = nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs outputs;
+          };
+          modules = [
+            inputs.stylix.nixosModules.stylix
+            ./hosts/machines/gigatop/configuration.nix
+          ];
+        };
+      };
+      homeConfigurations = {
+        "kamwithk@gigatop" = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.${system};
+          extraSpecialArgs = {
+            inherit inputs outputs;
+          };
+          modules = [
+            inputs.stylix.homeManagerModules.stylix
+            inputs.nix-doom-emacs-unstraightened.hmModule
+            ./home-manager/users/kamwithk.nix
+          ];
+        };
       };
     };
-    homeConfigurations = {
-      "kamwithk@gigatop" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = { inherit inputs outputs; };
-        modules = [
-          inputs.stylix.homeManagerModules.stylix
-          inputs.nix-doom-emacs-unstraightened.hmModule
-          ./home-manager/users/kamwithk.nix
-        ];
-      };
-    };
-  };
 }

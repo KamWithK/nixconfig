@@ -19,11 +19,11 @@
       editor-open = "$$EDITOR $f";
       mpv-open = ''%${pkgs.mpv}/bin/mpv "$f" &>/dev/null &'';
       mkdir = ''
-      ''${{
-        printf "Directory Name: "
-        read DIR
-        mkdir $DIR
-      }}
+        ''${{
+          printf "Directory Name: "
+          read DIR
+          mkdir $DIR
+        }}
       '';
     };
 
@@ -48,7 +48,5 @@
   # Sourc - https://raw.githubusercontent.com/gokcehan/lf/master/etc/icons.example
   xdg.configFile."lf/icons".source = ../../dotfiles/.icons;
 
-  home.packages = with pkgs; [
-    xdragon
-  ];
+  home.packages = with pkgs; [ xdragon ];
 }

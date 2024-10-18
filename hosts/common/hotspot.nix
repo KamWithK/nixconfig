@@ -10,7 +10,5 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
-      linux-wifi-hotspot
-  ];
+  environment.systemPackages = with pkgs; [ linux-wifi-hotspot ];
 }

@@ -16,7 +16,9 @@
 
     settings = {
       devices = {
-        "Phone" = { id = "NUVCFFL-LWNKYUC-J2QALHA-YVRJ25V-BO2FV3I-4LR655O-POUC5Y6-BRI42QN"; };
+        "Phone" = {
+          id = "NUVCFFL-LWNKYUC-J2QALHA-YVRJ25V-BO2FV3I-4LR655O-POUC5Y6-BRI42QN";
+        };
       };
       folders = {
         "Org" = {

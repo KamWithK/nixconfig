@@ -25,7 +25,11 @@
       allowUnfree = true;
       allowUnfreePredicate = _: true;
     };
-    overlays = [ outputs.overlays.additions outputs.overlays.unstable-packages outputs.overlays.flake-inputs ];
+    overlays = [
+      outputs.overlays.additions
+      outputs.overlays.unstable-packages
+      outputs.overlays.flake-inputs
+    ];
   };
   # home-manager.useGlobalPkgs = true;
   # home-manager.useUserPackages = true;

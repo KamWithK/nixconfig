@@ -1,7 +1,9 @@
 { pkgs, ... }:
 
-let emacsPkg = pkgs.emacs29-pgtk;
-in {
+let
+  emacsPkg = pkgs.emacs29-pgtk;
+in
+{
   programs.emacs = {
     enable = true;
     package = emacsPkg;

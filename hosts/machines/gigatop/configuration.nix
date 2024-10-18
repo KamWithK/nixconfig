@@ -1,4 +1,11 @@
-{ config, pkgs, lib, inputs, outputs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  inputs,
+  outputs,
+  ...
+}:
 {
   imports = [
     ./hardware-configuration.nix
@@ -23,13 +30,16 @@
 
   # Source - https://github.com/Misterio77/nix-starter-configs/blob/main/standard/overlays/default.nix
   nixpkgs = {
-    overlays = with outputs.overlays; [ additions unstable-packages ];
+    overlays = with outputs.overlays; [
+      additions
+      unstable-packages
+    ];
     config.allowUnfree = true;
   };
   nix = {
     # This will add each flake input as a registry
     # To make nix3 commands consistent with your flake
-    registry = lib.mapAttrs (_: value: {flake = value;}) inputs;
+    registry = lib.mapAttrs (_: value: { flake = value; }) inputs;
 
     # This will additionally add your inputs to the system's legacy channels
     # Making legacy nix commands consistent as well, awesome!
@@ -62,12 +72,12 @@
   # Polkit
   security.polkit.enable = true;
   systemd = {
-  user.services.polkit-gnome-authentication-agent-1 = {
-    description = "polkit-gnome-authentication-agent-1";
-    wantedBy = [ "graphical-session.target" ];
-    wants = [ "graphical-session.target" ];
-    after = [ "graphical-session.target" ];
-    serviceConfig = {
+    user.services.polkit-gnome-authentication-agent-1 = {
+      description = "polkit-gnome-authentication-agent-1";
+      wantedBy = [ "graphical-session.target" ];
+      wants = [ "graphical-session.target" ];
+      after = [ "graphical-session.target" ];
+      serviceConfig = {
         Type = "simple";
         ExecStart = "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1";
         Restart = "on-failure";
@@ -87,7 +97,13 @@
   users.users.kamwithk = {
     isNormalUser = true;
     description = "Kamron Bhavnagri";
-    extraGroups = [ "networkmanager" "wheel" "scanner" "lp" "adbuser" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "scanner"
+      "lp"
+      "adbuser"
+    ];
   };
 
   # Docker virtualisation
@@ -96,12 +112,12 @@
 
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
-      home-manager
+    home-manager
 
-      killall
-      polkit_gnome
+    killall
+    polkit_gnome
 
-      helix
+    helix
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
