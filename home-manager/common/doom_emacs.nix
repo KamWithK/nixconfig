@@ -5,6 +5,7 @@
     enable = true;
     doomDir = ../../dotfiles/doom;
     emacs = pkgs.emacs29-pgtk;
+    provideEmacs = false;
     extraPackages =
       epkgs: config.programs.emacs.extraPackages epkgs ++ [ epkgs.treesit-grammars.with-all-grammars ];
     extraBinPackages = with pkgs; [
