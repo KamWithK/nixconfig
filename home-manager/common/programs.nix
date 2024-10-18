@@ -17,6 +17,7 @@
     flameshot
 
     gh
+    nixfmt-rfc-style
     # android-studio
   ];
 
