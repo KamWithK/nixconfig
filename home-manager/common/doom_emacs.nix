@@ -19,5 +19,4 @@
       nodePackages.npm
     ];
   };
-  services.emacs.enable = true;
 }
