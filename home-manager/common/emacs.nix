@@ -1,15 +1,7 @@
 { pkgs, ... }:
-
-let
-  emacsPkg = pkgs.emacs29-pgtk;
-in
 {
   programs.emacs = {
     enable = true;
-    package = emacsPkg;
-  };
-  services.emacs = {
-    enable = true;
-    package = emacsPkg;
+    package = pkgs.emacs29-pgtk.pkgs.withPackages (epkgs: [ epkgs.treesit-grammars.with-all-grammars ]);
   };
 }
