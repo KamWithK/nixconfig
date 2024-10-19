@@ -18,7 +18,12 @@
       ripgrep
       fd
       nil
+      cargo
+      rustc
+      rust-analyzer
+      go
       gotools
+      gopls
       vscode-langservers-extracted
       libxml2
       ispell
