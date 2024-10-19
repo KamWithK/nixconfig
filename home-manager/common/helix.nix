@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   programs.helix = {
@@ -24,17 +24,4 @@
     SYSTEMD_EDITOR = "hx";
     VISUAL = "hx";
   };
-
-  home.packages = with pkgs.nodePackages; [
-    pnpm
-    typescript
-    typescript-language-server
-    pkgs.unstable.vscode-langservers-extracted
-    dockerfile-language-server-nodejs
-    bash-language-server
-    pkgs.unstable.nodePackages.yaml-language-server
-    svelte-language-server
-    pkgs.nil
-    web-ext
-  ];
 }
