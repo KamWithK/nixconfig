@@ -12,6 +12,7 @@
     ../common/lf.nix
     ../common/code_tools.nix
     ../common/helix.nix
+    ../common/neovim.nix
     ../common/emacs.nix
     ../common/doom_emacs.nix
     ../common/zsh.nix
