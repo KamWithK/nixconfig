@@ -46,7 +46,6 @@
         cheatsheet.enable = true;
         whichKey.enable = true;
       };
-      dashboard.dashboard-nvim.enable = true;
     };
   };
 }
