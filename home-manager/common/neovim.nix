@@ -7,6 +7,7 @@
       viAlias = true;
       vimAlias = true;
       lsp.enable = true;
+      treesitter.enable = true;
       theme = {
         enable = true;
         name = "base16";
@@ -40,6 +41,7 @@
         html.enable = true;
         go.enable = true;
         lua.enable = true;
+        enableTreesitter = true;
       };
       telescope.enable = true;
       binds = {
