@@ -20,6 +20,9 @@
     # android-studio
   ];
 
+  programs.fzf.enable = true;
+  programs.zoxide.enable = true;
+
   programs.alacritty.enable = true;
 
   nixpkgs.config.environment.variables = {
