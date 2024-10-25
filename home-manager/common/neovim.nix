@@ -31,6 +31,16 @@
             ;
         };
       };
+      languages = {
+        rust.enable = true;
+        nix.enable = true;
+        ts.enable = true;
+        svelte.enable = true;
+        markdown.enable = true;
+        html.enable = true;
+        go.enable = true;
+        lua.enable = true;
+      };
     };
   };
 }
