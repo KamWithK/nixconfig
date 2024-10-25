@@ -6,6 +6,8 @@
     nix-direnv.enable = true;
   };
 
+  programs.lazygit.enable = true;
+
   home.packages =
     (with pkgs.nodePackages; [
       npm
