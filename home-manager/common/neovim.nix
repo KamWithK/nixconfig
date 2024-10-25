@@ -41,6 +41,12 @@
         go.enable = true;
         lua.enable = true;
       };
+      telescope.enable = true;
+      binds = {
+        cheatsheet.enable = true;
+        whichKey.enable = true;
+      };
+      dashboard.dashboard-nvim.enable = true;
     };
   };
 }
