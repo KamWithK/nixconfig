@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
   programs.nvf = {
@@ -29,7 +29,10 @@
         html.enable = true;
         css.enable = true;
         tailwind.enable = true;
-        ts.enable = true;
+        ts = {
+          enable = true;
+          lsp.package = pkgs.nodePackages.typescript-language-server;
+        };
         markdown.enable = true;
         svelte.enable = true;
       };
