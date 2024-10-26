@@ -84,6 +84,17 @@
         cheatsheet.enable = true;
         whichKey.enable = true;
       };
+
+      extraPlugins = {
+        neoclip = {
+          package = "nvim-neoclip";
+          after = [ "telescope" ];
+          setup = ''
+            require("neoclip").setup()
+            vim.keymap.set("n", "<leader>o", "<cmd>Telescope neoclip<CR>", { desc = "Telescope Neoclip" })
+          '';
+        };
+      };
     };
   };
 }
