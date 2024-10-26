@@ -15,15 +15,15 @@
         enableLSP = true;
         enableTreesitter = true;
 
-        rust.enable = true;
-        nix.enable = true;
-        ts.enable = true;
-        css.enable = true;
-        svelte.enable = true;
-        markdown.enable = true;
-        html.enable = true;
-        go.enable = true;
         lua.enable = true;
+        nix.enable = true;
+        rust.enable = true;
+        go.enable = true;
+        html.enable = true;
+        css.enable = true;
+        ts.enable = true;
+        markdown.enable = true;
+        svelte.enable = true;
       };
 
       autopairs.nvim-autopairs.enable = true;
