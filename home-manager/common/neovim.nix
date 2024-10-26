@@ -12,6 +12,9 @@
       treesitter.enable = true;
 
       languages = {
+        enableLSP = true;
+        enableTreesitter = true;
+
         rust.enable = true;
         nix.enable = true;
         ts.enable = true;
@@ -20,7 +23,6 @@
         html.enable = true;
         go.enable = true;
         lua.enable = true;
-        enableTreesitter = true;
       };
 
       autopairs.nvim-autopairs.enable = true;
