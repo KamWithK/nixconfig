@@ -27,6 +27,8 @@
       autocomplete.nvim-cmp.enable = true;
       comments.comment-nvim.enable = true;
 
+      git.gitsigns.enable = true;
+
       theme = {
         enable = true;
         name = "base16";
