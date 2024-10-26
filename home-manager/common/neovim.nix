@@ -8,7 +8,10 @@
       viAlias = true;
       vimAlias = true;
 
-      lsp.enable = true;
+      lsp = {
+        enable = true;
+        lightbulb.enable = true;
+      };
       treesitter.enable = true;
 
       languages = {
