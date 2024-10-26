@@ -94,6 +94,9 @@
             vim.keymap.set("n", "<leader>o", "<cmd>Telescope neoclip<CR>", { desc = "Telescope Neoclip" })
           '';
         };
+        nvim-web-devicons = {
+          package = "nvim-web-devicons";
+        };
       };
     };
   };
