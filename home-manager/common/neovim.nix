@@ -15,8 +15,12 @@
         enableLSP = true;
         enableTreesitter = true;
 
+        nix = {
+          enable = true;
+          format.type = "nixfmt";
+        };
+
         lua.enable = true;
-        nix.enable = true;
         rust.enable = true;
         go.enable = true;
         html.enable = true;
