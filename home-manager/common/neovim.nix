@@ -75,6 +75,7 @@
         colorizer.enable = true;
         illuminate.enable = true;
       };
+      visuals.nvimWebDevicons.enable = true;
 
       telescope.enable = true;
       filetree.neo-tree.enable = true;
