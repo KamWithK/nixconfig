@@ -18,6 +18,7 @@
         rust.enable = true;
         nix.enable = true;
         ts.enable = true;
+        css.enable = true;
         svelte.enable = true;
         markdown.enable = true;
         html.enable = true;
