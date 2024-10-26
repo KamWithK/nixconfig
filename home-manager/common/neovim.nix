@@ -10,6 +10,7 @@
 
       lsp = {
         enable = true;
+        trouble.enable = true;
         lightbulb.enable = true;
       };
       treesitter.enable = true;
