@@ -7,8 +7,26 @@
     settings.vim = {
       viAlias = true;
       vimAlias = true;
+
       lsp.enable = true;
       treesitter.enable = true;
+
+      languages = {
+        rust.enable = true;
+        nix.enable = true;
+        ts.enable = true;
+        svelte.enable = true;
+        markdown.enable = true;
+        html.enable = true;
+        go.enable = true;
+        lua.enable = true;
+        enableTreesitter = true;
+      };
+
+      autopairs.nvim-autopairs.enable = true;
+      autocomplete.nvim-cmp.enable = true;
+      comments.comment-nvim.enable = true;
+
       theme = {
         enable = true;
         name = "base16";
@@ -33,20 +51,7 @@
             ;
         };
       };
-      autopairs.nvim-autopairs.enable = true;
-      autocomplete.nvim-cmp.enable = true;
-      comments.comment-nvim.enable = true;
-      languages = {
-        rust.enable = true;
-        nix.enable = true;
-        ts.enable = true;
-        svelte.enable = true;
-        markdown.enable = true;
-        html.enable = true;
-        go.enable = true;
-        lua.enable = true;
-        enableTreesitter = true;
-      };
+
       telescope.enable = true;
       binds = {
         cheatsheet.enable = true;
