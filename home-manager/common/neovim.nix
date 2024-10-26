@@ -70,6 +70,11 @@
 
       statusline.lualine.enable = true;
 
+      ui = {
+        colorizer.enable = true;
+        illuminate.enable = true;
+      };
+
       telescope.enable = true;
       filetree.neo-tree.enable = true;
       binds = {
