@@ -53,6 +53,7 @@
       };
 
       telescope.enable = true;
+      filetree.neo-tree.enable = true;
       binds = {
         cheatsheet.enable = true;
         whichKey.enable = true;
