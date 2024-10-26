@@ -40,6 +40,7 @@
       autopairs.nvim-autopairs.enable = true;
       autocomplete.nvim-cmp.enable = true;
       comments.comment-nvim.enable = true;
+      utility.surround.enable = true;
 
       git.gitsigns.enable = true;
 
