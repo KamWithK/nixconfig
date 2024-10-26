@@ -25,6 +25,7 @@
         go.enable = true;
         html.enable = true;
         css.enable = true;
+        tailwind.enable = true;
         ts.enable = true;
         markdown.enable = true;
         svelte.enable = true;
