@@ -24,6 +24,10 @@
   programs.zoxide.enable = true;
 
   programs.alacritty.enable = true;
+  programs.yazi = {
+    enable = true;
+    enableZshIntegration = true;
+  };
 
   nixpkgs.config.environment.variables = {
     TERMINAL = "alacritty";

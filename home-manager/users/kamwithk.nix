@@ -9,7 +9,6 @@
     # ../common/bspwm.nix
     ../common/hyprland.nix
     ../common/gtk.nix
-    ../common/lf.nix
     ../common/code_tools.nix
     ../common/helix.nix
     ../common/neovim.nix
