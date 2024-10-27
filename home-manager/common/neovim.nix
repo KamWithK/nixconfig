@@ -75,6 +75,7 @@
       ui = {
         colorizer.enable = true;
         illuminate.enable = true;
+        noice.enable = true;
       };
       visuals.nvimWebDevicons.enable = true;
 
