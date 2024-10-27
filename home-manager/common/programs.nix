@@ -15,6 +15,7 @@
     feh
     wget
     flameshot
+    vdhcoapp
 
     gh
     # android-studio
