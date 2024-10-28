@@ -86,7 +86,7 @@
         whichKey.enable = true;
       };
 
-      extraPlugins = {
+      extraPlugins = with pkgs.vimPlugins; {
         neoclip = {
           package = "nvim-neoclip";
           after = [ "telescope" ];
@@ -97,6 +97,24 @@
         };
         nvim-web-devicons = {
           package = "nvim-web-devicons";
+        };
+        cmp-cmdline = {
+          package = cmp-cmdline;
+          setup = ''
+            cmp.setup.cmdline(':', {
+              mapping = cmp.mapping.preset.cmdline(),
+              sources = cmp.config.sources({
+                { name = 'path' }
+              }, {
+                {
+                  name = 'cmdline',
+                  option = {
+                    ignore_cmds = { 'Man', '!' }
+                  }
+                }
+              })
+            })
+          '';
         };
       };
     };
