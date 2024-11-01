@@ -1,122 +1,93 @@
 { config, pkgs, ... }:
 
 {
-  programs.nvf = {
+  programs.neovim = {
     enable = true;
-    enableManpages = true;
-    settings.vim = {
-      viAlias = true;
-      vimAlias = true;
+    package = pkgs.unstable.neovim-unwrapped;
 
-      lsp = {
-        enable = true;
-        trouble.enable = true;
-        lightbulb.enable = true;
-      };
-      treesitter.enable = true;
+    withNodeJs = true;
+    withPython3 = true;
 
-      languages = {
-        enableLSP = true;
-        enableTreesitter = true;
+    extraPackages = with pkgs; [
+      ripgrep
+      gcc
+      gnumake
+      (lua.withPackages (luaPkgs: with luaPkgs; [ luarocks ]))
+      python3
+      unstable.nodePackages.neovim
+    ];
 
-        nix = {
-          enable = true;
-          format.type = "nixfmt";
-        };
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
 
-        lua.enable = true;
-        rust.enable = true;
-        go.enable = true;
-        html.enable = true;
-        css.enable = true;
-        tailwind.enable = true;
-        ts = {
-          enable = true;
-          lsp.package = pkgs.nodePackages.typescript-language-server;
-        };
-        markdown.enable = true;
-        svelte.enable = true;
-      };
+    plugins = with pkgs.unstable.vimPlugins; [
+      lazy-nvim
+      mini-nvim
+      nvim-treesitter.withAllGrammars
+    ];
 
-      autopairs.nvim-autopairs.enable = true;
-      autocomplete.nvim-cmp.enable = true;
-      comments.comment-nvim.enable = true;
-      utility.surround.enable = true;
+    extraLuaConfig = ''
+      ${builtins.readFile ../../dotfiles/nvim/init.lua}
+    '';
+  };
 
-      git.gitsigns.enable = true;
+  xdg.configFile."nvim/colors/ministylix.lua".text = with config.lib.stylix.colors.withHashtag; ''
+    require('mini.base16').setup({
+      palette = {
+        base00 = '${base00}', base01 = '${base01}', base02 = '${base02}', base03 = '${base03}',
+        base04 = '${base04}', base05 = '${base05}', base06 = '${base06}', base07 = '${base07}',
+        base08 = '${base08}', base09 = '${base09}', base0A = '${base0A}', base0B = '${base0B}',
+        base0C = '${base0C}', base0D = '${base0D}', base0E = '${base0E}', base0F = '${base0F}'
+      },
+      plugins = {
+        default = true,
+      },
+      use_cterm = true,
+    })
+    vim.g.colors_name = 'ministylix'
+  '';
+  xdg.configFile."nvim/lua/plugins/colorscheme.lua".text = ''
+    return {
+        "LazyVim/LazyVim",
+        opts = {
+          colorscheme = "ministylix",
+        },
+    }
+  '';
+  xdg.configFile."nvim/lua/plugins/mason.lua".text = ''
+    return {
+      { "williamboman/mason-lspconfig.nvim", enabled = false },
+      { "williamboman/mason.nvim",           enabled = false },
+    }
+  '';
+  xdg.configFile."nvim/lua/plugins/lspconfig.lua".text = ''
+    return {
+      "neovim/nvim-lspconfig",
+      opts = {
+        ensure_installed = {},
 
-      theme = {
-        enable = true;
-        name = "base16";
-        base16-colors = {
-          inherit (config.lib.stylix.colors)
-            base00
-            base01
-            base02
-            base03
-            base04
-            base05
-            base06
-            base07
-            base08
-            base09
-            base0A
-            base0B
-            base0C
-            base0D
-            base0E
-            base0F
-            ;
-        };
-      };
+        servers = {
+          jsonls = {},
+          yamlls = {},
+          lua_ls = {},
+          nil_ls = {},
+          gopls = {},
+          rust_analyzer = {},
+          ts_ls = {},
+          tailwindcss = {},
+          svelte = {},
+        }
+      },
+    }
+  '';
 
-      statusline.lualine.enable = true;
-
-      ui = {
-        colorizer.enable = true;
-        illuminate.enable = true;
-        noice.enable = true;
-      };
-      visuals.nvimWebDevicons.enable = true;
-
-      telescope.enable = true;
-      filetree.neo-tree.enable = true;
-      binds = {
-        cheatsheet.enable = true;
-        whichKey.enable = true;
-      };
-
-      extraPlugins = with pkgs.vimPlugins; {
-        neoclip = {
-          package = "nvim-neoclip";
-          after = [ "telescope" ];
-          setup = ''
-            require("neoclip").setup()
-            vim.keymap.set("n", "<leader>o", "<cmd>Telescope neoclip<CR>", { desc = "Telescope Neoclip" })
-          '';
-        };
-        nvim-web-devicons = {
-          package = "nvim-web-devicons";
-        };
-        cmp-cmdline = {
-          package = cmp-cmdline;
-          setup = ''
-            cmp.setup.cmdline(':', {
-              mapping = cmp.mapping.preset.cmdline(),
-              sources = cmp.config.sources({
-                { name = 'path' }
-              }, {
-                {
-                  name = 'cmdline',
-                  option = {
-                    ignore_cmds = { 'Man', '!' }
-                  }
-                }
-              })
-            })
-          '';
-        };
-      };
-    };
+  xdg.configFile."nvim/lua/config" = {
+    source = ../../dotfiles/nvim/config;
+    recursive = true;
+  };
+  xdg.configFile."nvim/lua/plugins" = {
+    source = ../../dotfiles/nvim/plugins;
+    recursive = true;
   };
 }

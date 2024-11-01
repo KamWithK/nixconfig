@@ -36,7 +36,10 @@
       go
       gotools
       gopls
+      lua-language-server
+      stylua
       vscode-langservers-extracted
+      tailwindcss-language-server
       libxml2
       ispell
       nixfmt-rfc-style
