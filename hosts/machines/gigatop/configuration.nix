@@ -11,7 +11,7 @@
     ./hardware-configuration.nix
     ../../common/pipewire.nix
     ../../common/x11.nix
-    ../../common/wayland.nix
+    # ../../common/wayland.nix
     ../../common/stylix.nix
     ../../common/locale.nix
     ../../common/fonts.nix

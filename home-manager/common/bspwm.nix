@@ -8,7 +8,6 @@
     settings = {
       border_width = 7;
       window_gap = 5;
-      focused_border_color = "#371c4b";
       pointer_follows_monitor = true;
       focus_follows_pointer = true;
     };
