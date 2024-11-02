@@ -5,7 +5,7 @@
     ../../hosts/common/stylix.nix
     ../common/programs.nix
     ../common/redshift.nix
-    ../common/ime.nix
+    # ../common/ime.nix
     ../common/bspwm.nix
     # ../common/hyprland.nix
     ../common/gtk.nix
