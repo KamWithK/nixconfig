@@ -103,12 +103,32 @@
       "scanner"
       "lp"
       "adbuser"
+      "libvirtd"
     ];
   };
 
   # Docker virtualisation
   virtualisation.docker.enable = true;
   users.extraGroups.docker.members = [ "kamwithk" ];
+
+  # KVM QEMU virtualivirtualisation
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      ovmf = {
+        enable = true;
+        packages = [
+          (pkgs.OVMF.override {
+            secureBoot = true;
+            tpmSupport = true;
+          }).fd
+        ];
+      };
+    };
+  };
 
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [

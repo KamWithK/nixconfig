@@ -1,7 +1,6 @@
 { pkgs, ... }:
 
 {
-
   home.packages = with pkgs; [
     xclip
     rofi-wayland
@@ -19,6 +18,8 @@
 
     gh
     # android-studio
+
+    gnome.gnome-boxes
   ];
 
   programs.fzf.enable = true;
