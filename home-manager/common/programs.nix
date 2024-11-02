@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs; [
     xclip
-    rofi-wayland
     networkmanagerapplet
     playerctl
     avizo

@@ -3,6 +3,10 @@
 {
   imports = [ ./polybar.nix ];
 
+  config.programs.rofi = {
+    enable = true;
+  };
+
   config.xsession.windowManager.bspwm = {
     enable = true;
     settings = {
@@ -33,7 +37,7 @@
     keybindings = {
       "super + q" = "alacritty";
       "super + w" = "librewolf";
-      "super + s" = "rofi -show drun -show-icons";
+      "super + s" = "rofi -show drun -display-drun '' -show-icons";
       "super + shift + s" = "flameshot gui --clipboard --accept-on-select";
       "super + Escape" = "pkill -USR1 -x sxhkd & bspc wm -r & killall polybar; polybar bar &";
       "super + c" = "bspc node -c";
