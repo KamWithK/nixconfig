@@ -6,8 +6,8 @@
     ../common/programs.nix
     ../common/redshift.nix
     # ../common/ime.nix
-    ../common/bspwm.nix
-    # ../common/hyprland.nix
+    # ../common/bspwm.nix
+    ../common/hyprland.nix
     ../common/gtk.nix
     ../common/code_tools.nix
     ../common/helix.nix
