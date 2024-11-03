@@ -8,6 +8,7 @@
     # ../common/ime.nix
     # ../common/bspwm.nix
     ../common/hyprland.nix
+    ../common/waybar.nix
     ../common/gtk.nix
     ../common/code_tools.nix
     ../common/helix.nix

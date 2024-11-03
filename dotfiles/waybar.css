@@ -1,0 +1,23 @@
+label.module,
+#tray,
+.modules-left #workspaces button,
+.modules-right #workspaces button,
+.modules-center #workspaces button
+{
+  border: 1px solid @base03;
+  border-radius: 5px;
+  margin: 0.35rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+}
+
+#workspaces button.active:hover,
+#workspaces button:hover {
+  background: lighter(@base05);
+  color: @base00;
+}
+
+#workspaces button.active {
+  background: @base0D;
+  color: @base00;
+}
+
