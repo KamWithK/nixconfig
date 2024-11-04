@@ -11,6 +11,7 @@
   home.packages = with pkgs; [
     networkmanagerapplet
     pavucontrol
+    avizo
 
     xfce.thunar
     feh
