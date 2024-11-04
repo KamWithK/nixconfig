@@ -9,6 +9,4 @@
       pokeget random --hide-name
     '';
   };
-
-  programs.carapace.enable = true;
 }

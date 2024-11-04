@@ -61,6 +61,6 @@
       };
     };
 
-    style = lib.mkAfter ''${builtins.readFile ../../dotfiles/waybar.css}'';
+    style = lib.mkAfter ''${builtins.readFile ../../../dotfiles/waybar.css}'';
   };
 }

@@ -28,7 +28,7 @@
     ];
 
     extraLuaConfig = ''
-      ${builtins.readFile ../../dotfiles/nvim/init.lua}
+      ${builtins.readFile ../../../dotfiles/nvim/init.lua}
     '';
   };
 
@@ -83,11 +83,11 @@
   '';
 
   xdg.configFile."nvim/lua/config" = {
-    source = ../../dotfiles/nvim/config;
+    source = ../../../dotfiles/nvim/config;
     recursive = true;
   };
   xdg.configFile."nvim/lua/plugins" = {
-    source = ../../dotfiles/nvim/plugins;
+    source = ../../../dotfiles/nvim/plugins;
     recursive = true;
   };
 }

@@ -3,7 +3,7 @@
 {
   programs.doom-emacs = {
     enable = true;
-    doomDir = ../../dotfiles/doom;
+    doomDir = ../../../dotfiles/doom;
     emacs = pkgs.emacs29-pgtk;
     provideEmacs = false;
     extraPackages =

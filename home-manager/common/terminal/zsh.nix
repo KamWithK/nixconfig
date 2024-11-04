@@ -12,11 +12,4 @@
       pokeget random --hide-name
     '';
   };
-
-  programs.starship = {
-    enable = true;
-    settings = {
-      add_newline = true;
-    };
-  };
 }
