@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./gtk.nix
     ./mpv.nix
     ./obs.nix
     ./redshift.nix
