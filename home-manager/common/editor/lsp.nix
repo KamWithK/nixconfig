@@ -6,9 +6,9 @@
       typescript-language-server
       dockerfile-language-server-nodejs
       bash-language-server
-      svelte-language-server
     ])
     ++ (with pkgs.unstable.nodePackages; [ yaml-language-server ])
+    ++ (with pkgs.unstable; [ svelte-language-server ])
     ++ (with pkgs; [
       nil
       rust-analyzer
