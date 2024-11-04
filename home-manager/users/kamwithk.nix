@@ -1,4 +1,4 @@
-{ outputs, pkgs, ... }:
+{ inputs, ... }:
 
 {
   imports = [
@@ -16,9 +16,9 @@
       allowUnfreePredicate = _: true;
     };
     overlays = [
-      outputs.overlays.additions
-      outputs.overlays.unstable-packages
-      outputs.overlays.flake-inputs
+      inputs.self.overlays.additions
+      inputs.self.overlays.unstable-packages
+      inputs.self.overlays.flake-inputs
     ];
   };
   # home-manager.useGlobalPkgs = true;

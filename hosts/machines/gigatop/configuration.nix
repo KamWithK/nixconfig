@@ -3,7 +3,6 @@
   pkgs,
   lib,
   inputs,
-  outputs,
   ...
 }:
 {
@@ -30,7 +29,7 @@
 
   # Source - https://github.com/Misterio77/nix-starter-configs/blob/main/standard/overlays/default.nix
   nixpkgs = {
-    overlays = with outputs.overlays; [
+    overlays = with inputs.self.overlays; [
       additions
       unstable-packages
     ];
