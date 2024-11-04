@@ -12,8 +12,8 @@
 
     # libinput.enable = true; # touchpad support
 
-    # windowManager.bspwm.enable = true;
-    windowManager.hypr.enable = true;
+    windowManager.bspwm.enable = false;
+    windowManager.hypr.enable = false;
 
     # ~/.background-image loaded by default on x11
     desktopManager.wallpaper.mode = "fill";
