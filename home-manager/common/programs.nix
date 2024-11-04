@@ -14,6 +14,7 @@
     wget
     flameshot
     vdhcoapp
+    pokeget-rs
 
     gh
     # android-studio
@@ -28,6 +29,7 @@
   programs.yazi = {
     enable = true;
     enableZshIntegration = true;
+    enableNushellIntegration = true;
   };
 
   nixpkgs.config.environment.variables = {

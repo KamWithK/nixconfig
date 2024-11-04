@@ -16,6 +16,7 @@
     ../common/emacs.nix
     ../common/doom_emacs.nix
     ../common/zsh.nix
+    ../common/nushell.nix
     ../common/mpv.nix
     ../common/obs.nix
     ../common/librewolf.nix

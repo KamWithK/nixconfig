@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   programs.zsh = {
@@ -19,6 +19,4 @@
       add_newline = true;
     };
   };
-
-  home.packages = with pkgs; [ pokeget-rs ];
 }
