@@ -21,6 +21,8 @@
     xwayland.enable = true;
 
     settings = {
+      dwindle.preserve_split = true;
+
       general = {
         gaps_in = 3;
         gaps_out = 10;
