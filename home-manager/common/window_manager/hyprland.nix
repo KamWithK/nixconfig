@@ -21,6 +21,14 @@
     xwayland.enable = true;
 
     settings = {
+      general = {
+        gaps_in = 3;
+        gaps_out = 10;
+        border_size = 3;
+      };
+
+      decoration.rounding = 3;
+
       "$mod" = "SUPER";
 
       windowrule = [ "workspace 5, discord" ];
@@ -97,14 +105,6 @@
         ", XF86AudioNext, exec, playerctl next "
         ", XF86AudioPrev, exec, playerctl previous"
       ];
-
-      general = {
-        gaps_in = 3;
-        gaps_out = 10;
-        border_size = 3;
-      };
-
-      decoration.rounding = 3;
     };
   };
 
