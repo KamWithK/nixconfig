@@ -20,8 +20,8 @@
 
     gnome.gnome-boxes
 
-    unstable.discord
-    unstable.vesktop
+    discord
+    vesktop
     signal-desktop
     slack
     spotify
@@ -32,7 +32,7 @@
     # unstable.feishin
     # sonixd
 
-    qbittorrent
+    unstable.qbittorrent
     nicotine-plus
     unstable.picard
   ];
