@@ -9,7 +9,11 @@
       prettier
     ])
     ++ (with pkgs.unstable.nodePackages; [ yaml-language-server ])
-    ++ (with pkgs.unstable; [ svelte-language-server ])
+    ++ (with pkgs.unstable; [
+      svelte-language-server
+      marksman
+      markdownlint-cli2
+    ])
     ++ (with pkgs; [
       nil
       rust-analyzer
