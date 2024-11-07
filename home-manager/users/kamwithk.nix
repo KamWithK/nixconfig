@@ -18,6 +18,7 @@
     overlays = [
       inputs.self.overlays.additions
       inputs.self.overlays.unstable-packages
+      inputs.self.overlays.master-packages
       inputs.self.overlays.flake-inputs
     ];
   };

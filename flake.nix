@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixos-master.url = "github:nixos/nixpkgs";
 
     stylix.url = "github:danth/stylix/release-24.05";
     nvf.url = "github:notashelf/nvf/v0.7";

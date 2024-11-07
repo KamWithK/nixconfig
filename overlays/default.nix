@@ -20,6 +20,12 @@
       config.allowUnfree = true;
     };
   };
+  master-packages = final: _prev: {
+    master = import inputs.nixos-master {
+      system = final.system;
+      config.allowUnfree = true;
+    };
+  };
 
   # For every flake input, aliases 'pkgs.inputs.${flake}' to
   # 'inputs.${flake}.packages.${pkgs.system}' or
