@@ -4,6 +4,7 @@
   imports = [
     ./zsh.nix
     ./nushell.nix
+    ./zellij.nix
     ./starship.nix
     ./yazi.nix
     ./git.nix
