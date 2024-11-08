@@ -15,7 +15,7 @@
       default {
         bg "${base03}";
         fg "${base05}";
-        red "${base08}";
+        red "${base01}";
         green "${base0B}";
         blue "${base0D}";
         yellow "${base0A}";
