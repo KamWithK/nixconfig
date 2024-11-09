@@ -17,11 +17,4 @@
       ];
     };
   };
-
-  home.sessionVariables = {
-    EDITOR = "hx";
-    SUDO_EDITOR = "hx";
-    SYSTEMD_EDITOR = "hx";
-    VISUAL = "hx";
-  };
 }
