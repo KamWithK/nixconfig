@@ -27,4 +27,8 @@
       }
     }
   '';
+
+  home.shellAliases = {
+    zd = "zellij --layout zellij.kdl";
+  };
 }

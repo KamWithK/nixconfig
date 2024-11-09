@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
   programs.nushell = {
@@ -17,5 +17,7 @@
 
       DIRENV_WARN_TIMEOUT = "0";
     };
+
+    shellAliases = config.home.shellAliases;
   };
 }
