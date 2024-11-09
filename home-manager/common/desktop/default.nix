@@ -13,6 +13,8 @@
     pavucontrol
     avizo
 
+    git-crypt
+
     xfce.thunar
     feh
     flameshot
