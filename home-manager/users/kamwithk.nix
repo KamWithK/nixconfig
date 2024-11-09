@@ -15,11 +15,11 @@
       allowUnfree = true;
       allowUnfreePredicate = _: true;
     };
-    overlays = [
-      inputs.self.overlays.additions
-      inputs.self.overlays.unstable-packages
-      inputs.self.overlays.master-packages
-      inputs.self.overlays.flake-inputs
+    overlays = with inputs.self.overlays; [
+      additions
+      unstable-packages
+      master-packages
+      flake-inputs
     ];
   };
   # home-manager.useGlobalPkgs = true;

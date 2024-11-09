@@ -37,8 +37,8 @@
           specialArgs = {
             inherit inputs outputs;
           };
-          modules = [
-            inputs.stylix.nixosModules.stylix
+          modules = with inputs; [
+            stylix.nixosModules.stylix
             ./hosts/machines/gigatop/configuration.nix
           ];
         };
@@ -49,10 +49,10 @@
           extraSpecialArgs = {
             inherit inputs outputs;
           };
-          modules = [
-            inputs.stylix.homeManagerModules.stylix
-            inputs.nvf.homeManagerModules.default
-            inputs.nix-doom-emacs-unstraightened.hmModule
+          modules = with inputs; [
+            stylix.homeManagerModules.stylix
+            nvf.homeManagerModules.default
+            nix-doom-emacs-unstraightened.hmModule
             ./home-manager/users/kamwithk.nix
           ];
         };
