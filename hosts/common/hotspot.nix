@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, secrets, ... }:
 {
   services.create_ap = {
     enable = true;
@@ -6,7 +6,7 @@
       INTERNET_IFACE = "enp42s0";
       WIFI_IFACE = "wlp33s0";
       SSID = "WIFI";
-      PASSPHRASE = "";
+      PASSPHRASE = secrets.hotspot.passphrase;
     };
   };
 
