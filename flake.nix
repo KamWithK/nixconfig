@@ -24,7 +24,6 @@
       ...
     }@inputs:
     let
-      inherit (self) outputs;
       system = "x86_64-linux";
       secrets = builtins.fromJSON (builtins.readFile "${self}/secrets.json");
     in
@@ -35,7 +34,7 @@
       nixosConfigurations = {
         gigatop = nixpkgs.lib.nixosSystem {
           specialArgs = {
-            inherit inputs outputs secrets;
+            inherit inputs secrets;
           };
           modules = with inputs; [
             stylix.nixosModules.stylix
@@ -47,7 +46,7 @@
         "kamwithk@gigatop" = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.${system};
           extraSpecialArgs = {
-            inherit inputs outputs secrets;
+            inherit inputs secrets;
           };
           modules = with inputs; [
             stylix.homeManagerModules.stylix
