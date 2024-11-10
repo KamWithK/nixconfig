@@ -7,7 +7,6 @@
     nixos-master.url = "github:nixos/nixpkgs";
 
     stylix.url = "github:danth/stylix/release-24.05";
-    nvf.url = "github:notashelf/nvf/v0.7";
 
     nix-doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
     # Optional, to download less. Neither the module nor the overlay uses this input.
@@ -52,7 +51,6 @@
           };
           modules = with inputs; [
             stylix.homeManagerModules.stylix
-            nvf.homeManagerModules.default
             nix-doom-emacs-unstraightened.hmModule
             ./home-manager/users/kamwithk.nix
           ];
