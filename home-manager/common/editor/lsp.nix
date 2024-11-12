@@ -14,6 +14,7 @@
       marksman
       markdownlint-cli2
     ])
+    ++ (with pkgs.master; [ vtsls ])
     ++ (with pkgs; [
       nil
       rust-analyzer
