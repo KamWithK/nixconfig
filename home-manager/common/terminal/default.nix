@@ -13,6 +13,7 @@
   programs.fzf.enable = true;
   programs.zoxide.enable = true;
   programs.carapace.enable = true;
+  programs.thefuck.enable = true;
 
   programs.alacritty.enable = true;
 
