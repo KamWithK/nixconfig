@@ -16,9 +16,6 @@
       web-ext
     ])
     ++ (with pkgs; [
-      ripgrep
-      fd
-
       cargo
       rustc
       go

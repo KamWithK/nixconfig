@@ -9,7 +9,6 @@
     withPython3 = true;
 
     extraPackages = with pkgs; [
-      ripgrep
       gcc
       gnumake
       (lua.withPackages (luaPkgs: with luaPkgs; [ luarocks ]))
