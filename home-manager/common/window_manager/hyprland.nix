@@ -37,7 +37,7 @@
       windowrulev2 = [ "workspace 5, initialTitle:^(Spotify( Premium)?)$" ];
 
       bind = [
-        "$mod, Q, exec, alacritty"
+        "$mod, Q, exec, foot"
         "$mod, W, exec, firefox"
         "$mod, E, exec, emacsclient -c -a emacs"
         "$mod, C, killactive,"

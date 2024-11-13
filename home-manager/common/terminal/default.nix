@@ -22,7 +22,7 @@
   programs.alacritty.enable = true;
 
   nixpkgs.config.environment.variables = {
-    TERMINAL = "alacritty";
+    TERMINAL = "foot";
   };
 
   home.packages = with pkgs; [
