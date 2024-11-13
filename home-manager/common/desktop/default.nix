@@ -8,6 +8,8 @@
     ./redshift.nix
   ];
 
+  programs.zathura.enable = true;
+
   home.packages = with pkgs; [
     networkmanagerapplet
     pavucontrol
