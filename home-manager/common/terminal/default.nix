@@ -18,6 +18,7 @@
   programs.carapace.enable = true;
   programs.thefuck.enable = true;
 
+  programs.foot.enable = true;
   programs.alacritty.enable = true;
 
   nixpkgs.config.environment.variables = {
