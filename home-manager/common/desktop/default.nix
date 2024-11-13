@@ -18,7 +18,6 @@
     xfce.thunar
     feh
     flameshot
-    vdhcoapp
 
     gnome.gnome-boxes
 

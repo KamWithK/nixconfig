@@ -38,7 +38,7 @@
 
       bind = [
         "$mod, Q, exec, alacritty"
-        "$mod, W, exec, librewolf"
+        "$mod, W, exec, firefox"
         "$mod, E, exec, emacsclient -c -a emacs"
         "$mod, C, killactive,"
         "$mod, /, exit,"

@@ -3,6 +3,6 @@
 {
   imports = [
     ./brave.nix
-    ./librewolf.nix
+    ./firefox.nix
   ];
 }
