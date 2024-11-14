@@ -4,8 +4,8 @@
     enable = true;
 
     user = "kamwithk";
-    key = "${/home/kamwithk/.config/syncthing/key.pem}";
-    cert = "${/home/kamwithk/.config/syncthing/cert.pem}";
+    key = "/etc/syncthing/key.pem";
+    cert = "/etc/syncthing/cert.pem";
 
     dataDir = "/home/kamwithk";
     configDir = "/home/kamwithk/.config/syncthing";
