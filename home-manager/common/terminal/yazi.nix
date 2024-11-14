@@ -10,5 +10,6 @@
     poppler
     ffmpegthumbnailer
     imagemagick
+    ueberzugpp
   ];
 }
