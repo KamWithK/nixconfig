@@ -21,7 +21,7 @@
     feh
     flameshot
 
-    gnome.gnome-boxes
+    gnome-boxes
 
     discord
     vesktop
@@ -32,11 +32,11 @@
     # jellyfin-media-player
     # jellyfin-mpv-shim
     # onlyoffice-bin
-    # unstable.feishin
+    # feishin
     # sonixd
 
-    unstable.qbittorrent
+    qbittorrent
     nicotine-plus
-    unstable.picard
+    picard
   ];
 }
