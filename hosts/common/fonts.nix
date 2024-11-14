@@ -8,7 +8,7 @@
     google-fonts
     ipafont
     noto-fonts
-    noto-fonts-cjk-sans
+    noto-fonts-cjk
   ];
 
   # Default fonts

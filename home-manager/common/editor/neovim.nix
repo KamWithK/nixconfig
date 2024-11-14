@@ -3,7 +3,7 @@
 {
   programs.neovim = {
     enable = true;
-    package = pkgs.neovim-unwrapped;
+    package = pkgs.unstable.neovim-unwrapped;
 
     withNodeJs = true;
     withPython3 = true;
@@ -13,7 +13,7 @@
       gnumake
       (lua.withPackages (luaPkgs: with luaPkgs; [ luarocks ]))
       python3
-      nodePackages.neovim
+      unstable.nodePackages.neovim
     ];
 
     viAlias = true;
@@ -21,7 +21,7 @@
     vimdiffAlias = true;
     defaultEditor = true;
 
-    plugins = with pkgs.vimPlugins; [
+    plugins = with pkgs.unstable.vimPlugins; [
       lazy-nvim
       mini-nvim
       nvim-treesitter.withAllGrammars

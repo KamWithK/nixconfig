@@ -2,24 +2,28 @@
 
 {
   home.packages =
-    (with pkgs.nodePackages; [ prettier ])
-    ++ (with pkgs.master; [ vtsls ])
-    ++ (with pkgs; [
-      marksman
-      markdownlint-cli2
-      nil
+    (with pkgs.nodePackages; [
+      typescript-language-server
       dockerfile-language-server-nodejs
       bash-language-server
+      prettier
+    ])
+    ++ (with pkgs.unstable.nodePackages; [ yaml-language-server ])
+    ++ (with pkgs.unstable; [
+      svelte-language-server
+      marksman
+      markdownlint-cli2
+    ])
+    ++ (with pkgs.master; [ vtsls ])
+    ++ (with pkgs; [
+      nil
       rust-analyzer
       gotools
       gopls
       lua-language-server
       stylua
       vscode-langservers-extracted
-      typescript-language-server
       tailwindcss-language-server
-      svelte-language-server
-      yaml-language-server
       libxml2
       ispell
       nixfmt-rfc-style

@@ -17,6 +17,7 @@
     };
     overlays = with inputs.self.overlays; [
       additions
+      unstable-packages
       master-packages
       flake-inputs
     ];

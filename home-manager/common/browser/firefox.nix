@@ -3,7 +3,7 @@
 {
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox;
+    package = pkgs.unstable.firefox;
 
     nativeMessagingHosts = [ pkgs.vdhcoapp ];
     policies = {
