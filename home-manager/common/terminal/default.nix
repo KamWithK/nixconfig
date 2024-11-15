@@ -21,6 +21,11 @@
   programs.foot.enable = true;
   programs.alacritty.enable = true;
 
+  programs.atuin = {
+    enable = true;
+    flags = [ "--disable-up-arrow" ];
+  };
+
   nixpkgs.config.environment.variables = {
     TERMINAL = "foot";
   };
