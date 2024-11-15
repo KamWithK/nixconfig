@@ -112,8 +112,8 @@
     };
   };
 
+  services.swaync.enable = true;
   home.packages = with pkgs; [
-    swaynotificationcenter
     wl-clipboard
     grim
     slurp

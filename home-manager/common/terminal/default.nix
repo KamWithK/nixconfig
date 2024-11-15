@@ -32,7 +32,5 @@
     unp
     unrar
     pokeget-rs
-
-    playerctl
   ];
 }

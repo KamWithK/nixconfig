@@ -9,17 +9,19 @@
   ];
 
   programs.zathura.enable = true;
+  programs.feh.enable = true;
+  services.network-manager-applet.enable = true;
+  services.playerctld.enable = true;
+  services.flameshot.enable = false;
+
+  services.avizo.enable = true;
 
   home.packages = with pkgs; [
-    networkmanagerapplet
     pavucontrol
-    avizo
 
     git-crypt
 
     xfce.thunar
-    feh
-    flameshot
 
     gnome.gnome-boxes
 
@@ -31,9 +33,8 @@
     # calibre
     # jellyfin-media-player
     # jellyfin-mpv-shim
-    # onlyoffice-bin
+    # onlyoffice-desktopeditors
     # unstable.feishin
-    # sonixd
 
     unstable.qbittorrent
     nicotine-plus

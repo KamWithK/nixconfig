@@ -6,6 +6,7 @@
     nix-direnv.enable = true;
   };
 
+  programs.pandoc.enable = true;
   programs.lazygit.enable = true;
 
   home.packages =
@@ -19,8 +20,6 @@
       cargo
       rustc
       go
-
-      pandoc
 
       # android-studio
     ]);
