@@ -13,6 +13,23 @@
   programs.jq.enable = true;
   programs.fd.enable = true;
   programs.ripgrep.enable = true;
+
+  programs.bat = {
+    enable = true;
+
+    extraPackages = with pkgs.bat-extras; [
+      batman
+      batgrep
+      batdiff
+    ];
+  };
+  home.shellAliases = {
+    cat = "bat";
+    man = "batman";
+    grep = "batgrep";
+    diff = "batdiff";
+  };
+
   programs.fzf.enable = true;
   programs.zoxide.enable = true;
   programs.carapace.enable = true;
