@@ -23,7 +23,7 @@
 
     xfce.thunar
 
-    gnome.gnome-boxes
+    unstable.gnome-boxes
 
     discord
     vesktop
