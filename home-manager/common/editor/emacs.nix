@@ -7,4 +7,6 @@
       epkgs.all-the-icons
     ]);
   };
+
+  xdg.configFile."emacs/init.el".source = ../../../dotfiles/emacs/gnu/init.el;
 }
