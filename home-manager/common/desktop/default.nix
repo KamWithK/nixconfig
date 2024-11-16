@@ -17,6 +17,7 @@
   services.avizo.enable = true;
 
   home.packages = with pkgs; [
+    playerctl
     pavucontrol
 
     git-crypt
