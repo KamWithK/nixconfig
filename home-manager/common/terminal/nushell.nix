@@ -1,10 +1,15 @@
-{ config, ... }:
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}:
 
 {
   programs.nushell = {
     enable = true;
 
-    extraConfig = ''
+    extraConfig = with pkgs.nushellPlugins; ''
       $env.config.show_banner = false
       pokeget random --hide-name
 
@@ -17,6 +22,9 @@
         }
         rm -fp $tmp
       }
+
+      plugin add ${lib.getExe formats}
+      plugin add ${lib.getExe query}
     '';
 
     environmentVariables = {
