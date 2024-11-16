@@ -28,6 +28,10 @@
     man = "batman";
     grep = "batgrep";
     diff = "batdiff";
+
+    up = "sudo nix flake update";
+    hm = "home-manager switch --flake .#kamwithk@gigatop";
+    syst = "sudo nixos-rebuild switch --flake .#gigatop";
   };
 
   programs.fzf.enable = true;
