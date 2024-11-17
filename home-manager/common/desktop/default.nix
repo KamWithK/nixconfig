@@ -20,8 +20,6 @@
     playerctl
     pavucontrol
 
-    git-crypt
-
     xfce.thunar
 
     unstable.gnome-boxes
