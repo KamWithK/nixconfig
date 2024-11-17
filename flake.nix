@@ -9,7 +9,6 @@
     stylix.url = "github:danth/stylix/release-24.05";
 
     nix-doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
-    # Optional, to download less. Neither the module nor the overlay uses this input.
     nix-doom-emacs-unstraightened.inputs.nixpkgs.follows = "";
 
     home-manager.url = "github:nix-community/home-manager/release-24.05";
