@@ -40,5 +40,7 @@
     unstable.qbittorrent
     nicotine-plus
     unstable.picard
+
+    unstable.vintagestory
   ];
 }
