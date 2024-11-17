@@ -25,7 +25,7 @@
     }@inputs:
     let
       system = "x86_64-linux";
-      secrets = builtins.fromJSON (builtins.readFile "${self}/secrets.json");
+      secrets = builtins.fromJSON (builtins.readFile "${self}/secrets/secrets.json");
     in
     {
       packages = import ./pkgs nixpkgs.legacyPackages.${system};
