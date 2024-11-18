@@ -10,11 +10,11 @@
     ])
     ++ (with pkgs.unstable.nodePackages; [ yaml-language-server ])
     ++ (with pkgs.unstable; [
+      vtsls
       svelte-language-server
       marksman
       markdownlint-cli2
     ])
-    ++ (with pkgs.master; [ vtsls ])
     ++ (with pkgs; [
       nil
       rust-analyzer

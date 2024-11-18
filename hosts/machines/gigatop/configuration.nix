@@ -34,7 +34,6 @@
     overlays = with inputs.self.overlays; [
       additions
       unstable-packages
-      master-packages
     ];
     config.allowUnfree = true;
   };
