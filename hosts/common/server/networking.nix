@@ -6,6 +6,8 @@
     443
   ];
 
+  age.secrets.caddy.file = ../../../secrets/caddy.age;
+
   security.acme = {
     acceptTerms = true;
 
@@ -14,7 +16,7 @@
       group = config.services.caddy.group;
       dnsProvider = "cloudflare";
       dnsPropagationCheck = true;
-      environmentFile = ../../../secrets/cloudflare.secret;
+      environmentFile = config.age.secrets.caddy.path;
     };
 
     certs."kamwithk.com" = {

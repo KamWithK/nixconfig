@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
@@ -29,6 +29,8 @@
   # manage.
   home.username = "kamwithk";
   home.homeDirectory = "/home/kamwithk";
+
+  home.packages = with inputs; [ agenix.packages."${pkgs.system}".agenix ];
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release

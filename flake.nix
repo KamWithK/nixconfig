@@ -6,6 +6,7 @@
     nixos-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixos-master.url = "github:nixos/nixpkgs";
 
+    agenix.url = "github:ryantm/agenix";
     stylix.url = "github:danth/stylix/release-24.05";
 
     nix-doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
@@ -20,6 +21,7 @@
       self,
       nixpkgs,
       home-manager,
+      agenix,
       ...
     }@inputs:
     let
@@ -35,6 +37,8 @@
             inherit inputs;
           };
           modules = with inputs; [
+            agenix.nixosModules.default
+            { age.identityPaths = [ "/etc/ssh/ssh_host_rsa_key" ]; }
             stylix.nixosModules.stylix
             ./hosts/machines/gigatop/configuration.nix
           ];
@@ -47,6 +51,7 @@
             inherit inputs;
           };
           modules = with inputs; [
+            agenix.homeManagerModules.default
             stylix.homeManagerModules.stylix
             nix-doom-emacs-unstraightened.hmModule
             ./home-manager/users/kamwithk.nix
