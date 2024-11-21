@@ -13,7 +13,6 @@
       gnumake
       (lua.withPackages (luaPkgs: with luaPkgs; [ luarocks ]))
       python3
-      unstable.nodePackages.neovim
     ];
 
     viAlias = true;

@@ -9,18 +9,16 @@
   programs.pandoc.enable = true;
   programs.lazygit.enable = true;
 
-  home.packages =
-    (with pkgs.nodePackages; [
-      npm
-      pnpm
-      typescript
-      web-ext
-    ])
-    ++ (with pkgs; [
-      cargo
-      rustc
-      go
+  home.packages = with pkgs.unstable; [
+    cargo
+    rustc
+    go
 
-      # android-studio
-    ]);
+    nodePackages.npm
+    pnpm
+    typescript
+    web-ext
+
+    # android-studio
+  ];
 }
