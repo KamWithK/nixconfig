@@ -43,6 +43,7 @@
       "super + c" = "bspc node -c";
       "super + m" = "bspc quit";
       "super + g" = "bspc -s biggest.window";
+      "super + {_,shift+}{h,j,k,l}" = "bspc node -{f,s} {west,south,north,east}";
       "super + {_,shift+}{Left,Down,Up,Right}" = "bspc node -{f,s} {west,south,north,east}";
       "super + {_,shift + }{1-9}" = "bspc {desktop -f,node -d} '^{1-9,10}'";
       "XF86Audio{LowerVolume,RaiseVolume}" = "volumectl -u {down,up}";
