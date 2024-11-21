@@ -1,7 +1,7 @@
 { ... }:
 {
   services.redshift = {
-    enable = true;
+    enable = false;
     tray = true;
 
     provider = "manual";
