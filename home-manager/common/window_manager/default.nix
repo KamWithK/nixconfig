@@ -2,7 +2,7 @@
 
 {
   imports = [
-    # ./bspwm.nix
+    ./bspwm.nix
     ./hyprland.nix
     # ./ime.nix
   ];

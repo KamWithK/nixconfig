@@ -3,7 +3,7 @@
   # Enable the X11 windowing system.
   # Configure keymap in X11
   services.xserver = {
-    enable = false;
+    enable = true;
 
     xkb = {
       variant = "";
@@ -12,7 +12,7 @@
 
     # libinput.enable = true; # touchpad support
 
-    windowManager.bspwm.enable = false;
+    windowManager.bspwm.enable = true;
     windowManager.hypr.enable = false;
 
     # ~/.background-image loaded by default on x11
@@ -22,7 +22,7 @@
   services.displayManager.sddm = {
     enable = true;
     theme = "chili";
-    wayland.enable = true;
+    # wayland.enable = true;
   };
 
   # Theme for sddm
