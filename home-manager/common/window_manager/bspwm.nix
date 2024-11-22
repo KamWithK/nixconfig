@@ -28,7 +28,6 @@
     ];
     startupPrograms = [
       "killall polybar; polybar bar"
-      "solaar -w hide"
     ];
   };
 
