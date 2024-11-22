@@ -12,9 +12,20 @@
         font-0 = "FontAwesome:size=10";
         font-1 = "Noto Sans JP:size=10";
 
-        modules-left = "date";
-        modules-center = "title";
+        modules-left = "bspwm";
+        modules-center = "date";
         tray-position = "right";
+      };
+
+      "module/bspwm" = {
+        type = "internal/bspwm";
+        enable-scroll = false;
+        label-focused-padding = 2;
+        label-empty-padding = 2;
+        label-occupied-padding = 2;
+        label-urgent-padding = 2;
+        label-separator = "|";
+        label-separator-padding = "2";
       };
 
       "module/date" = {
@@ -22,8 +33,7 @@
 
         interval = "1.0";
 
-        time = "%H:%M:%S";
-        time-alt = "%Y-%m-%d%";
+        time = "   %d-%m-%Y      %H:%M:%S";
 
         format = "<label>";
         format-padding = 4;
