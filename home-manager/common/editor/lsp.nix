@@ -12,6 +12,7 @@
     marksman
     markdownlint-cli2
     nil
+    nixd
     rust-analyzer
     gotools
     gopls

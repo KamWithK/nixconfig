@@ -71,9 +71,11 @@
           yamlls = {},
           lua_ls = {},
           nil_ls = {},
+          nixd = {},
           gopls = {},
           rust_analyzer = {},
           ts_ls = {},
+          vtsls = {},
           tailwindcss = {},
           svelte = {},
         }
