@@ -39,7 +39,10 @@
   programs.carapace.enable = true;
   programs.thefuck.enable = true;
 
-  programs.foot.enable = true;
+  programs.foot = {
+    enable = true;
+    server.enable = true;
+  };
   programs.alacritty.enable = true;
 
   programs.atuin = {
