@@ -17,7 +17,10 @@
 
       tray.spacing = 10;
 
-      modules-left = [ "hyprland/workspaces" ];
+      modules-left = [
+        "hyprland/workspaces"
+        "river/tags"
+      ];
       modules-center = [
         "clock#date"
         "clock#time"
@@ -58,6 +61,10 @@
         on-click = "activate";
         format = "{icon}";
         persistent-workspaces."*" = 5;
+      };
+
+      "river/tags" = {
+        num-tags = 5;
       };
     };
 
