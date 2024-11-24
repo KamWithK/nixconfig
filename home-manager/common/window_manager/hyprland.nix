@@ -17,6 +17,10 @@
 
       decoration.rounding = 3;
 
+      exec-once = [
+        "swww-daemon"
+      ];
+
       "$mod" = "SUPER";
 
       windowrule = [ "workspace 5, discord" ];
