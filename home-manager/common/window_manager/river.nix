@@ -19,13 +19,15 @@
         numTags = 5;
         listToAttrSet = list: listToAttrs (imap (i: nameValuePair (toString i)) list);
         tagMap = foldl' (x: y: x ++ [ (lib.last x * 2) ]) [ 1 ] (lib.genList (_: [ 1 ]) (numTags - 1));
-        tagMapSet = listToAttrSet (map toString tagMap);
+        tagMapSet = listToAttrSet tagMap;
+        tagMapStrSet = listToAttrSet (map toString tagMap);
+        tagOr = t1: t2: toString (builtins.bitOr (tagMapSet.${toString t1}) (tagMapSet.${toString t2}));
         tagKeys = concatMapAttrs (index: tag: {
           "Super ${index}" = "set-focused-tags ${tag}";
           "Super+Shift ${index}" = "set-view-tags ${tag}";
           "Super+Control ${index}" = "toggle-focused-tags ${tag}";
           "Super+Shift+Control ${index}" = "set-view-tags ${tag}";
-        }) tagMapSet;
+        }) tagMapStrSet;
       in
       {
         default-layout = "bsp-layout";
@@ -85,8 +87,8 @@
             "'.blueman-manager-wrapped'" = "ssd";
             "'org.gnome.Boxes'" = "ssd";
             "'org.nicotine_plus.Nicotine'" = "ssd";
-            "'discord'" = "tags '${tagMapSet."5"}'";
-            "'Spotify'" = "tags '${tagMapSet."5"}'";
+            "'discord'" = "tags '${tagOr 1 5}'";
+            "'Spotify'" = "tags '${tagMapStrSet."5"}'";
           };
         };
 
