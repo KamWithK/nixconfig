@@ -47,7 +47,7 @@
       "super + {_,shift + }{1-9}" = "bspc {desktop -f,node -d} '^{1-9,10}'";
       "XF86Audio{LowerVolume,RaiseVolume}" = "volumectl -u {down,up}";
       "XF86AudioMute" = "volumectl toggle-mute";
-      "XF86Audio{Play,Next,Prev}" = "playerctl {play-pause,next,previous}";
+      "XF86Audio{Play,Media,Next,Prev}" = "playerctl {play-pause,play-pause,next,previous}";
     };
   };
 }

@@ -68,6 +68,7 @@
             "None XF86AudioRaiseVolume" = "spawn 'volumectl -u up'";
             "None XF86AudioMute" = "spawn 'volumectl toggle-mute'";
             "None XF86AudioPlay" = "spawn 'playerctl play-pause'";
+            "None XF86AudioMedia" = "spawn 'playerctl play-pause'";
             "None XF86AudioNext" = "spawn 'playerctl next'";
             "None XF86AudioPrev" = "spawn 'playerctl previous'";
           };

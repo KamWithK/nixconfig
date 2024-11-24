@@ -92,6 +92,7 @@
       bindl = [
         ", XF86AudioMute, exec, volumectl toggle-mute"
         ", XF86AudioPlay, exec, playerctl play-pause"
+        ", XF86AudioMedia, exec, playerctl play-pause"
         ", XF86AudioNext, exec, playerctl next "
         ", XF86AudioPrev, exec, playerctl previous"
       ];
