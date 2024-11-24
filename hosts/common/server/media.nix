@@ -2,7 +2,7 @@
 
 {
   services.navidrome = {
-    enable = true;
+    enable = false;
     package = pkgs.unstable.navidrome;
 
     settings = {
