@@ -88,6 +88,7 @@
             "'org.gnome.Boxes'" = "ssd";
             "'org.nicotine_plus.Nicotine'" = "ssd";
             "'discord'" = "tags '${tagOr 1 5}'";
+            "'org.squidowl.halloy'" = "tags '${tagOr 1 5}'";
             "'Spotify'" = "tags '${tagMapStrSet."5"}'";
           };
         };
