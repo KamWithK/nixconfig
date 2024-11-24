@@ -18,10 +18,10 @@
       let
         numTags = 5;
         listToAttrSet = list: listToAttrs (imap (i: nameValuePair (toString i)) list);
-        tagMap = foldl' (x: y: x ++ [ (lib.last x * 2) ]) [ 1 ] (lib.genList (_: [ 1 ]) (numTags - 1));
+        tagMap = foldl' (x: y: x ++ [ (last x * 2) ]) [ 1 ] (genList (_: [ 1 ]) (numTags - 1));
         tagMapSet = listToAttrSet tagMap;
         tagMapStrSet = listToAttrSet (map toString tagMap);
-        tagOr = t1: t2: toString (builtins.bitOr (tagMapSet.${toString t1}) (tagMapSet.${toString t2}));
+        tagOr = t1: t2: toString (bitOr (tagMapSet.${toString t1}) (tagMapSet.${toString t2}));
         tagKeys = concatMapAttrs (index: tag: {
           "Super ${index}" = "set-focused-tags ${tag}";
           "Super+Shift ${index}" = "set-view-tags ${tag}";
