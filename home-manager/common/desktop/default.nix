@@ -29,6 +29,7 @@
     signal-desktop
     slack
     spotify
+    halloy
     # calibre
     # jellyfin-media-player
     # jellyfin-mpv-shim
