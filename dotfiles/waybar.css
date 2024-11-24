@@ -1,5 +1,8 @@
 label.module,
 #tray,
+.modules-left #tags button,
+.modules-right #tags button,
+.modules-center #tags button,
 .modules-left #workspaces button,
 .modules-right #workspaces button,
 .modules-center #workspaces button {
@@ -9,12 +12,15 @@ label.module,
   padding: 0.2rem 0.6rem 0.2rem 0.6rem;
 }
 
+#tags button.focused:hover,
+#tags button:hover,
 #workspaces button.active:hover,
 #workspaces button:hover {
   background: lighter(@base05);
   color: @base00;
 }
 
+#tags button.focused,
 #workspaces button.active {
   background: @base0D;
   color: @base00;
