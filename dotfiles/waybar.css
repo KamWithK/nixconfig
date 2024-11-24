@@ -2,8 +2,7 @@ label.module,
 #tray,
 .modules-left #workspaces button,
 .modules-right #workspaces button,
-.modules-center #workspaces button
-{
+.modules-center #workspaces button {
   border: 1px solid @base03;
   border-radius: 5px;
   margin: 0.35rem;
@@ -20,4 +19,3 @@ label.module,
   background: @base0D;
   color: @base00;
 }
-
