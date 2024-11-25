@@ -42,4 +42,9 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  nix.gc = {
+    automatic = true;
+    options = "--delete-older-than 7d";
+  };
 }
