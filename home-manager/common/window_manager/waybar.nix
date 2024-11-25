@@ -27,7 +27,6 @@
       ];
       modules-right = [
         "pulseaudio"
-        "network"
         "tray"
       ];
 
@@ -42,19 +41,6 @@
       "pulseaudio" = {
         format = "   {volume}%";
         on-click = "pavucontrol";
-      };
-
-      "network" = {
-        format-icons = [
-          "󰤯"
-          "󰤟"
-          "󰤢"
-          "󰤥"
-          "󰤨"
-        ];
-        format-ethernet = "  {bandwidthDownOctets}";
-        format-wifi = "{icon} {signalStrength}%";
-        format-disconnected = "󰤮";
       };
 
       "hyprland/workspaces" = {
