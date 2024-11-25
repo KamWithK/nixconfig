@@ -8,9 +8,6 @@
     agenix.url = "github:ryantm/agenix";
     stylix.url = "github:danth/stylix";
 
-    nix-doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
-    nix-doom-emacs-unstraightened.inputs.nixpkgs.follows = "";
-
     home-manager.url = "github:nix-community/home-manager/release-24.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -51,7 +48,6 @@
           modules = with inputs; [
             agenix.homeManagerModules.default
             stylix.homeManagerModules.stylix
-            nix-doom-emacs-unstraightened.hmModule
             ./home-manager/users/kamwithk.nix
           ];
         };

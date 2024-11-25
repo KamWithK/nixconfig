@@ -7,7 +7,6 @@
     ./helix.nix
     ./neovim.nix
     ./emacs.nix
-    ./doom_emacs.nix
     ./vscode.nix
   ];
 }

@@ -8,5 +8,5 @@
     ]);
   };
 
-  xdg.configFile."emacs/init.el".source = ../../../dotfiles/emacs/gnu/init.el;
+  xdg.configFile."emacs/init.el".source = ../../../dotfiles/emacs/init.el;
 }
