@@ -7,6 +7,10 @@
 
     agenix.url = "github:ryantm/agenix";
     stylix.url = "github:danth/stylix";
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     home-manager.url = "github:nix-community/home-manager/release-24.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -48,6 +52,7 @@
           modules = with inputs; [
             agenix.homeManagerModules.default
             stylix.homeManagerModules.stylix
+            spicetify-nix.homeManagerModules.default
             ./home-manager/users/kamwithk.nix
           ];
         };

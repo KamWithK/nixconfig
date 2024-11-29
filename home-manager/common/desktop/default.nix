@@ -16,6 +16,8 @@
 
   services.avizo.enable = true;
 
+  programs.spicetify.enable = true;
+
   home.packages = with pkgs; [
     playerctl
     pavucontrol
@@ -29,7 +31,6 @@
     vesktop
     signal-desktop
     slack
-    spotify
     halloy
     # calibre
     # jellyfin-media-player
