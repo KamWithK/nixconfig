@@ -88,6 +88,8 @@
     };
   };
 
+  services.dbus.packages = [ pkgs.gcr ];
+
   # Logitech Unifying Bolt
   hardware.logitech.wireless.enable = true;
   hardware.logitech.wireless.enableGraphical = true;
