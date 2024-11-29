@@ -89,6 +89,7 @@
             "'org.pulseaudio.pavucontrol'" = "ssd";
             "'.blueman-manager-wrapped'" = "ssd";
             "'org.gnome.Boxes'" = "ssd";
+            "'org.gnome.Fractal'" = "ssd";
             "'org.nicotine_plus.Nicotine'" = "ssd";
             "'discord'" = "tags '${tagOr 1 5}'";
             "'org.squidowl.halloy'" = "tags '${tagOr 1 5}'";
