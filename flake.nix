@@ -12,6 +12,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    navidromePatch = {
+      url = "https://github.com/NixOS/nixpkgs/pull/356919.patch";
+      flake = false;
+    };
+
     home-manager.url = "github:nix-community/home-manager/release-24.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -25,13 +30,23 @@
     }@inputs:
     let
       system = "x86_64-linux";
+      originPkgs = import nixpkgs { inherit system; };
+      patchedNixpkgs = originPkgs.applyPatches {
+        name = "nixpkgs-patched";
+        src = nixpkgs;
+        patches = [ inputs.navidromePatch ];
+      };
+      patchedPkgs = import patchedNixpkgs { inherit system; };
+      patchedNixOS = import (patchedNixpkgs + /nixos/lib/eval-config.nix);
     in
     {
-      packages = import ./pkgs nixpkgs.legacyPackages.${system};
+      nixpkgs = patchedPkgs;
+      packages = patchedPkgs;
       overlays = import ./overlays { inherit inputs; };
 
       nixosConfigurations = {
-        gigatop = nixpkgs.lib.nixosSystem {
+        gigatop = patchedNixOS {
+          inherit system;
           specialArgs = {
             inherit inputs;
           };

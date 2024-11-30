@@ -5,4 +5,5 @@ in
 {
   "caddy.age".publicKeys = [ gigatop ];
   "hotspot.age".publicKeys = [ gigatop ];
+  "navidrome.age".publicKeys = [ gigatop ];
 }

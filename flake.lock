@@ -258,6 +258,18 @@
         "type": "github"
       }
     },
+    "navidromePatch": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-cihpP+af/IDJKEIWv560s2owB9tSyTN8TUiJ1Mp0qSQ=",
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/356919.patch"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/NixOS/nixpkgs/pull/356919.patch"
+      }
+    },
     "nixos-unstable": {
       "locked": {
         "lastModified": 1732521221,
@@ -326,6 +338,7 @@
       "inputs": {
         "agenix": "agenix",
         "home-manager": "home-manager_2",
+        "navidromePatch": "navidromePatch",
         "nixos-unstable": "nixos-unstable",
         "nixpkgs": "nixpkgs_2",
         "spicetify-nix": "spicetify-nix",
@@ -340,11 +353,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732853817,
-        "narHash": "sha256-qld4zbdw0gpBImjmOBB/nrhgUAjog78+MGhk/aLJ3Co=",
+        "lastModified": 1732940172,
+        "narHash": "sha256-0at0wkwsaJfJBCGlwtXfg2JdeY30mZXhrWeoNqhLEYc=",
         "owner": "Gerg-L",
         "repo": "spicetify-nix",
-        "rev": "a5e1e17c3c0fd311bb5fa60035281481f6a4b248",
+        "rev": "0b712938230ab50d2e0cf961cc0f3660f7b18041",
         "type": "github"
       },
       "original": {
