@@ -43,6 +43,6 @@
     nicotine-plus
     unstable.picard
 
-    unstable.vintagestory
+    # unstable.vintagestory
   ];
 }
