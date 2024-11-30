@@ -12,8 +12,6 @@
     xwayland.enable = true;
 
     settings =
-      with config.lib.stylix.colors;
-      with config.stylix;
       with lib;
       let
         numTags = 5;
@@ -39,9 +37,6 @@
         set-cursor-warp = "on-output-change";
 
         border-width = 3;
-        border-color-focused = "0x${base0D}";
-        border-color-unfocused = "0x${base03}";
-        border-color-urgent = "0x${base08}";
 
         declare-mode = [
           "locked"
@@ -98,7 +93,6 @@
         };
 
         set-repeat = "50 300";
-        xcursor-theme = cursor.name;
       };
   };
 
