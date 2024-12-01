@@ -27,6 +27,6 @@
     wl-clipboard
     grim
     slurp
-    unstable.xwaylandvideobridge
+    xwaylandvideobridge
   ];
 }

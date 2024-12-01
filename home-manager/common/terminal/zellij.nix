@@ -3,7 +3,7 @@
   programs.zellij = {
     enable = true;
     enableZshIntegration = true;
-    package = pkgs.unstable.zellij;
+    package = pkgs.zellij;
   };
 
   xdg.configFile."zellij/config.kdl" = {

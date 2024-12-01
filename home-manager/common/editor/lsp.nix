@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  home.packages = with pkgs.unstable; [
+  home.packages = with pkgs; [
     bash-language-server
     yaml-language-server
     dockerfile-language-server-nodejs

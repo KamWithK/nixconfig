@@ -3,7 +3,7 @@
 {
   programs.neovim = {
     enable = true;
-    package = pkgs.unstable.neovim-unwrapped;
+    package = pkgs.neovim-unwrapped;
 
     withNodeJs = true;
     withPython3 = true;
@@ -20,7 +20,7 @@
     vimdiffAlias = true;
     defaultEditor = true;
 
-    plugins = with pkgs.unstable.vimPlugins; [
+    plugins = with pkgs.vimPlugins; [
       lazy-nvim
       mini-nvim
       nvim-treesitter.withAllGrammars

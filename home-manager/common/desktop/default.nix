@@ -24,7 +24,7 @@
 
     xfce.thunar
 
-    unstable.gnome-boxes
+    gnome-boxes
 
     discord-canary
     signal-desktop
@@ -35,12 +35,12 @@
     # jellyfin-media-player
     # jellyfin-mpv-shim
     # onlyoffice-desktopeditors
-    # unstable.feishin
+    # feishin
 
-    unstable.qbittorrent
+    qbittorrent
     nicotine-plus
-    unstable.picard
+    picard
 
-    # unstable.vintagestory
+    # vintagestory
   ];
 }
