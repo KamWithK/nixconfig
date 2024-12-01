@@ -27,7 +27,6 @@
     unstable.gnome-boxes
 
     discord-canary
-    vesktop
     signal-desktop
     slack
     halloy
