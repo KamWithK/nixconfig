@@ -17,6 +17,13 @@
 
   programs.spicetify.enable = true;
 
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "application/pdf" = "org.pwmt.zathura-pdf-mupdf.desktop";
+    };
+  };
+
   home.packages = with pkgs; [
     playerctl
     pavucontrol
