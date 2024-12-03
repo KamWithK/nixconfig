@@ -15,6 +15,8 @@
 
   services.avizo.enable = true;
 
+  programs.btop.enable = true;
+
   programs.spicetify.enable = true;
 
   xdg.mimeApps = {
