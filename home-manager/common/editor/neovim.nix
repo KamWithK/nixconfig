@@ -78,6 +78,7 @@
           vtsls = {},
           tailwindcss = {},
           svelte = {},
+          slint_lsp = {},
         }
       },
     }
