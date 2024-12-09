@@ -78,11 +78,18 @@
           vtsls = {},
           tailwindcss = {},
           svelte = {},
-          slint_lsp = {},
+          slint_lsp = {
+            cmd = {
+              "slint-lsp",
+              "--style", "cosmic-dark",
+            },
+          },
         }
       },
     }
   '';
+  xdg.configFile."nvim/after/queries/rust/injections.scm".source =
+    ../../../dotfiles/nvim/rust_injections.scm;
 
   xdg.configFile."nvim/lua/config" = {
     source = ../../../dotfiles/nvim/config;
