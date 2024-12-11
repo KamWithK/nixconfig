@@ -22,7 +22,6 @@
     ../../common/syncthing.nix
     ../../common/shell.nix
     ../../common/mounts.nix
-    ../../common/hp_printer.nix
     ../../common/rgb.nix
     ../../common/steam.nix
     ../../common/server/networking.nix
