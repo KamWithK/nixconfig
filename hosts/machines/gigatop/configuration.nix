@@ -21,7 +21,7 @@
     ../../common/zerotier.nix
     ../../common/syncthing.nix
     ../../common/shell.nix
-    ../../common/mounts.nix
+    ../../common/filesystems.nix
     ../../common/rgb.nix
     ../../common/steam.nix
     ../../common/server/networking.nix
@@ -161,6 +161,17 @@
 
     helix
   ];
+
+  # fileSystems."/mnt/Backup" = {
+  #   device = "/dev/sda2";
+  #   fsType = "auto";
+  #   options = [
+  #     "nosuid"
+  #     "nodev"
+  #     "nofail"
+  #     "x-gvfs-show"
+  #   ];
+  # };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
