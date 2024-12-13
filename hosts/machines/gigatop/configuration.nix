@@ -19,7 +19,6 @@
     ../../common/hotspot.nix
     ../../common/vpn.nix
     ../../common/zerotier.nix
-    ../../common/syncthing.nix
     ../../common/shell.nix
     ../../common/filesystems.nix
     ../../common/rgb.nix
