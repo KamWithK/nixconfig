@@ -27,7 +27,6 @@
 
   # Theme for sddm
   environment.systemPackages = with pkgs; [
-    libsForQt5.qt5.qtgraphicaleffects
     sddm-chili-theme
   ];
 }
