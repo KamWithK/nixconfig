@@ -1,4 +1,10 @@
 { pkgs, ... }:
+
+let
+  sddm-astronaut = pkgs.sddm-astronaut.override {
+    themeConfig.PartialBlur = "false";
+  };
+in
 {
   # Enable the X11 windowing system.
   # Configure keymap in X11
@@ -21,12 +27,14 @@
 
   services.displayManager.sddm = {
     enable = true;
-    theme = "chili";
     wayland.enable = true;
+    package = pkgs.kdePackages.sddm;
+    extraPackages = [ sddm-astronaut ];
+
+    theme = "sddm-astronaut-theme";
   };
 
-  # Theme for sddm
-  environment.systemPackages = with pkgs; [
-    sddm-chili-theme
+  environment.systemPackages = [
+    sddm-astronaut
   ];
 }
