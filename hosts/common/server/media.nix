@@ -13,7 +13,7 @@
     user = "kamwithk";
 
     settings = {
-      MusicFolder = "/run/media/kamwithk/Media/Music";
+      MusicFolder = "/home/kamwithk/Music/";
     };
 
     credentialsFile = config.age.secrets.navidrome.path;
