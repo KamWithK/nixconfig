@@ -51,5 +51,6 @@
     picard
 
     # vintagestory
+    prismlauncher
   ];
 }
