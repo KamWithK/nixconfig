@@ -1,7 +1,7 @@
 { ... }:
 {
   programs.hyprland = {
-    enable = false;
+    enable = true;
     xwayland.enable = true;
   };
   programs.river = {

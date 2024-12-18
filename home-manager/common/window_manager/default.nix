@@ -5,7 +5,7 @@
     ./waybar.nix
 
     # ./bspwm.nix
-    # ./hyprland.nix
+    ./hyprland.nix
     ./river.nix
     # ./ime.nix
   ];
