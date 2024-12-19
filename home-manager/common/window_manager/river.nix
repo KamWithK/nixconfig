@@ -30,7 +30,6 @@
         default-layout = "bsp-layout";
         spawn = [
           "'river-bsp-layout --inner-gap 3 --outer-gap 10 --split-perc 0.5'"
-          "swww-daemon"
         ];
         focus-follows-cursor = "always";
         set-cursor-warp = "on-output-change";

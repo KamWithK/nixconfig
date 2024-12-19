@@ -1,7 +1,6 @@
 {
   pkgs,
   options,
-  config,
   lib,
   ...
 }:
@@ -31,7 +30,10 @@
       # Themes from:
       # https://tinted-theming.github.io/base16-gallery/
       base16Scheme = "${pkgs.base16-schemes}/share/themes/stella.yaml";
-      image = config.lib.stylix.pixel "base0A";
+      image = pkgs.fetchurl {
+        url = "https://r4.wallpaperflare.com/wallpaper/64/184/28/anime-girls-balloon-women-sky-wallpaper-659852899b3ce30278d24f855a4395e8.jpg";
+        sha256 = "sha256-ItLBw28sOvSRDoLPSkdudTpZyU5XaTW7UxNnsYfFXxU=";
+      };
     }
     // lib.optionalAttrs (builtins.hasAttr "iconTheme" options.stylix) {
       iconTheme = {

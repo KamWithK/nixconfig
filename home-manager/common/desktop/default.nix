@@ -29,7 +29,6 @@
   home.packages = with pkgs; [
     playerctl
     pavucontrol
-    swww
 
     xfce.thunar
 
