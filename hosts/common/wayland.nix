@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   programs.hyprland = {
-    enable = true;
+    enable = false;
     xwayland.enable = true;
   };
   programs.river = {
