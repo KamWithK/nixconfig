@@ -3,7 +3,7 @@
   # Custom fonts
   fonts.fontDir.enable = true;
   fonts.packages = with pkgs; [
-    nerdfonts
+    # nerd-fonts
     font-awesome
     google-fonts
     ipafont

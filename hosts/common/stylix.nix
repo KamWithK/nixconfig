@@ -17,12 +17,12 @@
         };
 
         monospace = {
-          package = pkgs.nerdfonts;
+          package = pkgs.nerd-fonts.hack;
           name = "Hack Nerd Font Mono";
         };
 
         emoji = {
-          package = pkgs.nerdfonts;
+          package = pkgs.nerd-fonts.symbols-only;
           name = "Symbols Nerd Font";
         };
       };

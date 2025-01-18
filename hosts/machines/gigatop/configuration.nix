@@ -32,7 +32,6 @@
   nixpkgs = {
     overlays = with inputs.self.overlays; [
       additions
-      unstable-packages
     ];
     config.allowUnfree = true;
   };
