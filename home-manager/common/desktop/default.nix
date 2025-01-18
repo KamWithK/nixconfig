@@ -29,6 +29,7 @@
   home.packages = with pkgs; [
     playerctl
     pavucontrol
+    simple-scan
 
     xfce.thunar
 
