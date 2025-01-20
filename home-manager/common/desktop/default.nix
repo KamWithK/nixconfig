@@ -1,5 +1,8 @@
 { pkgs, ... }:
 
+let
+  archiveTool = [ "org.gnome.fileRoller.desktop" ];
+in
 {
   imports = [
     ./mpv.nix
@@ -23,6 +26,10 @@
     enable = true;
     defaultApplications = {
       "application/pdf" = "org.pwmt.zathura-pdf-mupdf.desktop";
+      "application/zip" = archiveTool;
+      "application/7z" = archiveTool;
+      "application/rar" = archiveTool;
+      "application/*rar" = archiveTool;
     };
   };
 
@@ -30,6 +37,7 @@
     playerctl
     pavucontrol
     simple-scan
+    file-roller
 
     xfce.thunar
 
