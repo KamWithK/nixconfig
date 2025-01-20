@@ -33,6 +33,10 @@
         useACMEHost = "kamwithk.com";
         extraConfig = "reverse_proxy localhost:4533";
       };
+      "actual.kamwithk.com" = {
+        useACMEHost = "kamwithk.com";
+        extraConfig = "reverse_proxy localhost:3000";
+      };
     };
   };
 }

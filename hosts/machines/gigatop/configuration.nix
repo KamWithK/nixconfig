@@ -26,6 +26,7 @@
     ../../common/steam.nix
     ../../common/server/networking.nix
     ../../common/server/media.nix
+    ../../common/server/actual.nix
   ];
 
   # Source - https://github.com/Misterio77/nix-starter-configs/blob/main/standard/overlays/default.nix
