@@ -10,10 +10,8 @@
   services.navidrome = {
     enable = true;
 
-    user = "kamwithk";
-
     settings = {
-      MusicFolder = "/home/kamwithk/Music/";
+      MusicFolder = "/Music/";
     };
 
     credentialsFile = config.age.secrets.navidrome.path;
