@@ -68,6 +68,10 @@
   networking.hostName = "gigatop";
   networking.networkmanager.enable = true;
   # networking.wireless.enable = true;
+  networking.nameservers = [
+    "1.1.1.1"
+    "9.9.9.9"
+  ];
 
   # Polkit
   security.polkit.enable = true;
