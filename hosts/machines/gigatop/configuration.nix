@@ -166,8 +166,8 @@
     helix
   ];
 
-  fileSystems."/mnt/Data" = {
-    device = "/dev/nvme0n1p2";
+  fileSystems."/mnt/Data" = lib.mkForce {
+    device = "/dev/disk/by-uuid/E694-49AD";
     fsType = "auto";
     options = [
       "users"
@@ -179,8 +179,8 @@
       "x-gvfs-show"
     ];
   };
-  fileSystems."/mnt/Media" = {
-    device = "/dev/nvme0n1p3";
+  fileSystems."/mnt/Media" = lib.mkForce {
+    device = "/dev/disk/by-uuid/B69F-1F2F";
     fsType = "auto";
     options = [
       "users"
