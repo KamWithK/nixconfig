@@ -166,16 +166,32 @@
     helix
   ];
 
-  # fileSystems."/mnt/Backup" = {
-  #   device = "/dev/sda2";
-  #   fsType = "auto";
-  #   options = [
-  #     "nosuid"
-  #     "nodev"
-  #     "nofail"
-  #     "x-gvfs-show"
-  #   ];
-  # };
+  fileSystems."/mnt/Data" = {
+    device = "/dev/nvme0n1p2";
+    fsType = "auto";
+    options = [
+      "users"
+      "uid=1000"
+      "gid=1000"
+      "nosuid"
+      "nodev"
+      "nofail"
+      "x-gvfs-show"
+    ];
+  };
+  fileSystems."/mnt/Media" = {
+    device = "/dev/nvme0n1p3";
+    fsType = "auto";
+    options = [
+      "users"
+      "uid=1000"
+      "gid=1000"
+      "nosuid"
+      "nodev"
+      "nofail"
+      "x-gvfs-show"
+    ];
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
