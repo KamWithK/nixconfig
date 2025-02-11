@@ -51,7 +51,12 @@
           };
           modules = with inputs; [
             agenix.nixosModules.default
-            { age.identityPaths = [ "/etc/ssh/ssh_host_rsa_key" ]; }
+            {
+              age.identityPaths = [
+                "/home/kamwithk/.ssh/id_ed25519"
+                "/etc/ssh/ssh_host_rsa_key"
+              ];
+            }
             stylix.nixosModules.stylix
             ./hosts/machines/gigatop/configuration.nix
           ];
