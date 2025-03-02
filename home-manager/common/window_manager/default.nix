@@ -27,6 +27,6 @@
     wl-clipboard
     grim
     slurp
-    xwaylandvideobridge
+    kdePackages.xwaylandvideobridge
   ];
 }
