@@ -38,6 +38,7 @@ in
     pavucontrol
     simple-scan
     file-roller
+    vlc
 
     xfce.thunar
 
