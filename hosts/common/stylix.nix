@@ -43,5 +43,7 @@
         dark = "Papirus-Dark-Maia";
         light = "Papirus-Light-Maia";
       };
+
+      targets.mpv.enable = false;
     };
 }

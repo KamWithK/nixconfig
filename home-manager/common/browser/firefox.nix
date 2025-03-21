@@ -101,4 +101,6 @@
       };
     };
   };
+
+  stylix.targets.firefox.profileNames = [ "kamwithk" ];
 }
