@@ -58,6 +58,7 @@ in
     qbittorrent
     nicotine-plus
     picard
+    yt-dlp
 
     # vintagestory
     prismlauncher
