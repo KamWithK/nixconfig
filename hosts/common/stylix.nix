@@ -26,6 +26,11 @@
           name = "Symbols Nerd Font";
         };
       };
+      cursor = {
+        package = pkgs.bibata-cursors;
+        name = "Bibata-Modern-Classic";
+        size = 20;
+      };
 
       # Themes from:
       # https://tinted-theming.github.io/base16-gallery/
