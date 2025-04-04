@@ -19,7 +19,7 @@
 
       "$mod" = "SUPER";
 
-      windowrule = [ "workspace 5, discord" ];
+      windowrule = [ "workspace 5, class:discord" ];
       windowrulev2 = [ "workspace 5, initialTitle:^(Spotify( Premium)?)$" ];
 
       bind = [
