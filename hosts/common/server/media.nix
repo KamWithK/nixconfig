@@ -14,7 +14,7 @@
       MusicFolder = "/Music/";
     };
 
-    credentialsFile = config.age.secrets.navidrome.path;
+    environmentFile = config.age.secrets.navidrome.path;
   };
 
   environment.systemPackages = with pkgs; [ navidrome ];

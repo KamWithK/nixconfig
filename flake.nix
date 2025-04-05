@@ -11,11 +11,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    navidromePatch = {
-      url = "https://github.com/NixOS/nixpkgs/pull/356919.patch";
-      flake = false;
-    };
-
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -33,7 +28,7 @@
       patchedNixpkgs = originPkgs.applyPatches {
         name = "nixpkgs-patched";
         src = nixpkgs;
-        patches = [ inputs.navidromePatch ];
+        patches = [ ];
       };
       patchedPkgs = import patchedNixpkgs { inherit system; };
       patchedNixOS = import (patchedNixpkgs + /nixos/lib/eval-config.nix);
