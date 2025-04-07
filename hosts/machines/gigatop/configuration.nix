@@ -156,6 +156,11 @@
     };
   };
 
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
+
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     home-manager
