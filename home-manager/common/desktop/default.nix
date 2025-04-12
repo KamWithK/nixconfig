@@ -43,6 +43,7 @@ in
     xfce.thunar
 
     gnome-boxes
+    aws-workspaces
 
     discord-canary
     signal-desktop
