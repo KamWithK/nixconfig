@@ -39,6 +39,7 @@ in
     simple-scan
     file-roller
     vlc
+    localsend
 
     xfce.thunar
 
