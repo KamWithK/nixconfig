@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -7,5 +7,9 @@
     ./helix.nix
     ./neovim.nix
     ./emacs.nix
+  ];
+
+  home.packages = with pkgs; [
+    godot
   ];
 }
