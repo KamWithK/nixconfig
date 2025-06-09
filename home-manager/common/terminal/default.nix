@@ -37,7 +37,7 @@
   programs.fzf.enable = true;
   programs.zoxide.enable = true;
   programs.carapace.enable = true;
-  programs.thefuck.enable = true;
+  programs.pay-respects.enable = true;
 
   programs.foot = {
     enable = true;
