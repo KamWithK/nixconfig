@@ -14,5 +14,6 @@
     krita
     aseprite
     blender
+    android-studio
   ];
 }
