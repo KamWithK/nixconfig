@@ -65,7 +65,7 @@
           };
           modules = with inputs; [
             agenix.homeManagerModules.default
-            stylix.homeManagerModules.stylix
+            stylix.homeModules.stylix
             spicetify-nix.homeManagerModules.default
             ./home-manager/users/kamwithk.nix
           ];

@@ -95,8 +95,8 @@
           }
         ];
         order = [
-          "Brave"
-          "Google"
+          "brave"
+          "google"
         ];
       };
     };
