@@ -73,6 +73,7 @@
           nil_ls = {},
           nixd = {},
           gopls = {},
+          clangd = {},
           rust_analyzer = {},
           ts_ls = {},
           vtsls = {},
