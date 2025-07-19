@@ -63,6 +63,6 @@ in
     yt-dlp
 
     # vintagestory
-    prismlauncher
+    # prismlauncher
   ];
 }
