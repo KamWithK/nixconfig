@@ -75,6 +75,7 @@
           gopls = {},
           clangd = {},
           rust_analyzer = {},
+          zls = {},
           ts_ls = {},
           vtsls = {},
           tailwindcss = {},
@@ -86,6 +87,7 @@
               "--style", "cosmic-dark",
             },
           },
+          slangd = {},
         }
       },
     }
