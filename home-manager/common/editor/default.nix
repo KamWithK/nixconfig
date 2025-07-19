@@ -10,6 +10,8 @@
   ];
 
   home.packages = with pkgs; [
+    cutter
+    seer
     godot
     krita
     blender
