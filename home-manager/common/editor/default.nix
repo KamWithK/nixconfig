@@ -10,7 +10,7 @@
   ];
 
   home.packages = with pkgs; [
-    cutter
+    nnd
     seer
     godot
     krita
