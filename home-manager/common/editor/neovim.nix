@@ -76,6 +76,7 @@
           clangd = {},
           rust_analyzer = {},
           zls = {},
+          ols = {},
           ts_ls = {},
           vtsls = {},
           tailwindcss = {},
