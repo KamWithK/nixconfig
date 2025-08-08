@@ -129,6 +129,7 @@
       "scanner"
       "lp"
       "adbuser"
+      "wireshark"
       "libvirtd"
     ];
   };

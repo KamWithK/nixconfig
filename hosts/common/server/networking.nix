@@ -8,6 +8,8 @@
 
   age.secrets.caddy.file = ../../../secrets/caddy.age;
 
+  programs.wireshark.enable = true;
+
   security.acme = {
     acceptTerms = true;
 
