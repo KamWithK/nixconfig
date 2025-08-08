@@ -161,7 +161,10 @@
     binfmt = true;
   };
 
-  services.iperf3.enable = true;
+  services.iperf3 = {
+    enable = true;
+    openFirewall = true;
+  };
 
   # List packages installed in system profile
   environment.systemPackages = with pkgs; [
