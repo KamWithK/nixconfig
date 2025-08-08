@@ -4,6 +4,13 @@
   networking.firewall.allowedTCPPorts = [
     80
     443
+    8554
+    9002
+  ];
+  networking.firewall.allowedUDPPorts = [
+    8554
+    4819
+    9002
   ];
 
   age.secrets.caddy.file = ../../../secrets/caddy.age;
@@ -38,14 +45,6 @@
       "actual.kamwithk.com" = {
         useACMEHost = "kamwithk.com";
         extraConfig = "reverse_proxy localhost:3000";
-      };
-      "dev.kamwithk.com" = {
-        useACMEHost = "kamwithk.com";
-        extraConfig = "reverse_proxy localhost:5173";
-      };
-      "websocket.kamwithk.com" = {
-        useACMEHost = "kamwithk.com";
-        extraConfig = "reverse_proxy localhost:9002";
       };
     };
   };
