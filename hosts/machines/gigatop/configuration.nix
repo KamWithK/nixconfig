@@ -112,6 +112,7 @@
   };
 
   services.dbus.packages = [ pkgs.gcr ];
+  services.udev.packages = [ pkgs.android-udev-rules ];
 
   # Logitech Unifying Bolt
   hardware.logitech.wireless.enable = true;
