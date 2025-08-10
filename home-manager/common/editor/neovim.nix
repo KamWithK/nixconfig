@@ -76,7 +76,21 @@
           clangd = {},
           rust_analyzer = {},
           zls = {},
-          ols = {},
+          ols = {
+            init_options = {
+              checker_args = "-strict-style",
+              collections = {
+                { name = "shared", path = vim.fn.expand('$HOME/odin-lib') }
+              },
+              enable_hover = true,
+              enable_snippets = true,
+              enable_semantic_tokens = true,
+              enable_document_symbols = true,
+              enable_inlay_hints = true,
+              enable_references = true,
+              enable_rename = true,
+            },
+          },
           ts_ls = {},
           vtsls = {},
           tailwindcss = {},
