@@ -5,50 +5,50 @@
   ...
 }:
 {
-  stylix =
-    {
-      enable = true;
-      polarity = "dark";
-      fonts = {
-        sizes = {
-          popups = 15;
-          desktop = 13;
-          terminal = 13;
-        };
-
-        monospace = {
-          package = pkgs.nerd-fonts.hack;
-          name = "Hack Nerd Font Mono";
-        };
-
-        emoji = {
-          package = pkgs.nerd-fonts.symbols-only;
-          name = "Symbols Nerd Font";
-        };
-      };
-      cursor = {
-        package = pkgs.bibata-cursors;
-        name = "Bibata-Modern-Classic";
-        size = 20;
+  stylix = {
+    enable = true;
+    polarity = "dark";
+    fonts = {
+      sizes = {
+        popups = 15;
+        desktop = 13;
+        terminal = 13;
       };
 
-      # Themes from:
-      # https://tinted-theming.github.io/base16-gallery/
-      base16Scheme = "${pkgs.base16-schemes}/share/themes/stella.yaml";
-      image = pkgs.fetchurl {
-        url = "https://r4.wallpaperflare.com/wallpaper/64/184/28/anime-girls-balloon-women-sky-wallpaper-659852899b3ce30278d24f855a4395e8.jpg";
-        sha256 = "sha256-ItLBw28sOvSRDoLPSkdudTpZyU5XaTW7UxNnsYfFXxU=";
-      };
-    }
-    // lib.optionalAttrs (builtins.hasAttr "iconTheme" options.stylix) {
-      iconTheme = {
-        enable = true;
-        package = pkgs.papirus-maia-icon-theme;
-
-        dark = "Papirus-Dark-Maia";
-        light = "Papirus-Light-Maia";
+      monospace = {
+        package = pkgs.nerd-fonts.hack;
+        name = "Hack Nerd Font Mono";
       };
 
-      targets.mpv.enable = false;
+      emoji = {
+        package = pkgs.nerd-fonts.symbols-only;
+        name = "Symbols Nerd Font";
+      };
     };
+    cursor = {
+      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Classic";
+      size = 20;
+    };
+
+    # Themes from:
+    # https://tinted-theming.github.io/base16-gallery/
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/stella.yaml";
+    image = pkgs.fetchurl {
+      url = "https://r4.wallpaperflare.com/wallpaper/64/184/28/anime-girls-balloon-women-sky-wallpaper-659852899b3ce30278d24f855a4395e8.jpg";
+      sha256 = "sha256-ItLBw28sOvSRDoLPSkdudTpZyU5XaTW7UxNnsYfFXxU=";
+    };
+  }
+  // lib.optionalAttrs (builtins.hasAttr "iconTheme" options.stylix) {
+    iconTheme = {
+      enable = true;
+      package = pkgs.papirus-maia-icon-theme;
+
+      dark = "Papirus-Dark-Maia";
+      light = "Papirus-Light-Maia";
+    };
+  }
+  // lib.optionalAttrs (builtins.hasAttr "mpv" options.stylix.targets) {
+    targets.mpv.enable = false;
+  };
 }
