@@ -3,8 +3,10 @@
 {
   programs.git = {
     enable = true;
-    userName = "Kamron Bhavnagri";
-    userEmail = "kamwithk@tuta.io";
+    settings.user = {
+      name = "Kamron Bhavnagri";
+      email = "kamwithk@tuta.io";
+    };
   };
   programs.gh.enable = true;
 }

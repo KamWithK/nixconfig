@@ -4,7 +4,7 @@
     enable = true;
     xwayland.enable = true;
   };
-  programs.river = {
+  programs.river-classic = {
     enable = true;
     xwayland.enable = true;
   };

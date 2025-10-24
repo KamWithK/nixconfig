@@ -49,8 +49,6 @@ in
     discord-canary
     signal-desktop
     slack
-    halloy
-    fractal
     # calibre
     # jellyfin-media-player
     # jellyfin-mpv-shim
