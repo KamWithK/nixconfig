@@ -11,6 +11,12 @@
 
     extraConfig = with pkgs.nushellPlugins; ''
       $env.config.show_banner = false
+
+      if 'ZELLIJ' not-in ($env | columns) {
+        zellij
+        exit
+      }
+
       pokeget random --hide-name
 
       def --env y [...args] {

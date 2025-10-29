@@ -1,9 +1,9 @@
-{ pkgs, ... }:
+{ ... }:
 {
   programs.zellij = {
     enable = true;
     enableZshIntegration = true;
-    package = pkgs.zellij;
+    exitShellOnExit = true;
   };
 
   xdg.configFile."zellij/config.kdl" = {
