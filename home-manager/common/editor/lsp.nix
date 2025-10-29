@@ -4,7 +4,7 @@
   home.packages = with pkgs; [
     bash-language-server
     yaml-language-server
-    dockerfile-language-server-nodejs
+    dockerfile-language-server
     vtsls
     typescript-language-server
     nodePackages.prettier
