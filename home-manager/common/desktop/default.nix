@@ -60,6 +60,8 @@ in
     picard
     yt-dlp
 
+    lollypop
+
     # vintagestory
     # prismlauncher
   ];
