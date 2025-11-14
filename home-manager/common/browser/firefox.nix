@@ -52,7 +52,6 @@
         "https://addons.mozilla.org/firefox/downloads/latest/privacy_badger/latest.xpi"
         "https://addons.mozilla.org/firefox/downloads/latest/sponsorblock/latest.xpi"
         "https://addons.mozilla.org/firefox/downloads/latest/decentraleyes/latest.xpi"
-        "https://addons.mozilla.org/firefox/downloads/latest/vimium-ff/latest.xpi"
       ];
 
       EncryptedMediaExtensions.Enabled = true;
