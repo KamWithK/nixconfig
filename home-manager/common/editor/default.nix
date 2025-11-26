@@ -11,8 +11,6 @@
 
   home.packages = with pkgs; [
     nnd
-    seer
-    godot
     krita
     blender
     android-studio
