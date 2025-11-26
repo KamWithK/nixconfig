@@ -1,6 +1,6 @@
 let
-  kamwithk = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILp8sfRCk3ttMLkw0BS9njIxjRpFbnefsW3imV9Wn5YS";
-  gigatop = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA/K1Zj7iD7yi4mDa1adWeQSV8XOMNp2efsYUm2bVu65";
+  kamwithk = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII97M4TNr8Lz3vTng4Sia5E6xmliMpMLyBDgtASeU/cX";
+  gigatop = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEwlRAJ/vMRGmgKWIEY3u0SDjBCM2Tp5Is/MrPg2hhrL";
   everyone = [
     gigatop
     kamwithk
