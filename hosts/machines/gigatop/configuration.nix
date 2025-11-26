@@ -136,7 +136,10 @@
   };
 
   # Docker virtualisation
-  virtualisation.docker.enable = true;
+  virtualisation = {
+    docker.enable = true;
+    podman.enable = true;
+  };
   users.extraGroups.docker.members = [ "kamwithk" ];
 
   # KVM QEMU virtualivirtualisation
