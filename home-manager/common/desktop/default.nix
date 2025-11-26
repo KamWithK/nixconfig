@@ -55,6 +55,7 @@ in
     # onlyoffice-desktopeditors
     # feishin
 
+    grayjay
     qbittorrent
     nicotine-plus
     picard
