@@ -62,6 +62,8 @@ in
 
     lollypop
 
+    anki
+
     # vintagestory
     # prismlauncher
   ];
