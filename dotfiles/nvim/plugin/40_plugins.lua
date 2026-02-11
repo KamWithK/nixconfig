@@ -68,6 +68,7 @@ now_if_args(function()
 		"tsx",
 		"rust",
 		"odin",
+		"wgsl",
 	}
 	local isnt_installed = function(lang)
 		return #vim.api.nvim_get_runtime_file("parser/" .. lang .. ".*", false) == 0
@@ -112,7 +113,7 @@ now_if_args(function()
 	-- the rules provided by 'nvim-lspconfig'.
 	-- Use `:h vim.lsp.config()` or 'ftplugin/lsp/' directory to configure servers.
 	-- Uncomment and tweak the following `vim.lsp.enable()` call to enable servers.
-	vim.lsp.enable({ "lua_ls", "nil", "nixd", "clangd", "rust_analyzer", "ols" })
+	vim.lsp.enable({ "lua_ls", "nil", "nixd", "clangd", "rust_analyzer", "ols", "wgsl_analyzer" })
 end)
 
 -- Formatting =================================================================
