@@ -112,6 +112,7 @@
   };
 
   services.dbus.packages = [ pkgs.gcr ];
+  services.flatpak.enable = true;
 
   # Logitech Unifying Bolt
   hardware.logitech.wireless.enable = true;
