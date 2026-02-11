@@ -40,7 +40,7 @@
     };
   }
   // lib.optionalAttrs (builtins.hasAttr "iconTheme" options.stylix) {
-    iconTheme = {
+    icons = {
       enable = true;
       package = pkgs.papirus-maia-icon-theme;
 

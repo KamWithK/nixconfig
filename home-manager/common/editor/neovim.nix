@@ -26,7 +26,7 @@
       nvim-treesitter.withAllGrammars
     ];
 
-    extraLuaConfig = ''
+    initLua = ''
       ${builtins.readFile ../../../dotfiles/nvim/init.lua}
     '';
   };

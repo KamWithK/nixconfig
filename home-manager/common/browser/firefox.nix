@@ -5,7 +5,6 @@
     enable = true;
     package = pkgs.firefox;
 
-    nativeMessagingHosts = [ pkgs.vdhcoapp ];
     policies = {
       DisableTelemetry = true;
       DisableFirefoxStudies = true;
